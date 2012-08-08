@@ -84,10 +84,10 @@ One of the things World of Goo does really well is to communicate to the player.
 When you hover your cursor over moving Goo balls or removable joints you'll get a clear marker around the selected ball and it'll stop and give you a cute look just to show you 'Hey! It's me you wanna pick up!'. Likewise when you have a ball selected and you're moving it around for a good spot you'll get a small notion of where it's going to connect and always you have a nice big clear marker on where your cursor is.
 
 <center>
-  <img src="http://madeoftree.net/media/images/wog/select.png" width="""130" height="100" />
-  <img src="http://madeoftree.net/media/images/wog/build.png" width="""130" height="100" />
-  <img src="http://madeoftree.net/media/images/wog/shooting.png" width="""130" height="100" />
-  <img src="http://madeoftree.net/media/images/wog/block.png" width="""130" height="100" /><br />
+  <img src="http://madeoftree.net/media/images/wog/select.png" width="130" height="100" />
+  <img src="http://madeoftree.net/media/images/wog/build.png" width="130" height="100" />
+  <img src="http://madeoftree.net/media/images/wog/shooting.png" width="130" height="100" />
+  <img src="http://madeoftree.net/media/images/wog/block.png" width="130" height="100" /><br />
   <em>Selecting, building, shooting and moving</em>
 </center>
 
@@ -113,10 +113,10 @@ One thing the game does is introduce new Goo balls all the time; balls you can r
 Even Goo's with minor changes like industrial Goo which you can't control or dangling Goo which will only dangle down gives a lot of depth to the game thanks to the great level design.
 
 <center>
-<img src="http://madeoftree.net/media/images/wog/industry.png" width="""130" height="100" />
-<img src="http://madeoftree.net/media/images/wog/water.png" width="""130" height="100" />
-<img src="http://madeoftree.net/media/images/wog/bone.png" width="""130" height="100" />
-<img src="http://madeoftree.net/media/images/wog/cutter.png" width="""130" height="100" />     <br />
+<img src="http://madeoftree.net/media/images/wog/industry.png" width="130" height="100" />
+<img src="http://madeoftree.net/media/images/wog/water.png" width="130" height="100" />
+<img src="http://madeoftree.net/media/images/wog/bone.png" width="130" height="100" />
+<img src="http://madeoftree.net/media/images/wog/cutter.png" width="130" height="100" />     <br />
   <em>There are lot's and lot's of levels which change the way you play</em>
 </center>  
 
@@ -161,9 +161,9 @@ This happens because in the rules you can only break a structure if you either d
 You even have to abuse the rules because the extra hard level goals can't be beat otherwise. I'm sure the creators chose to incorporate the bugs into the game and they even call them features in a way to create bigger challenges in the extra level requirements.
 
 <center> 
-  <img src="http://madeoftree.net/media/images/wog/throw.png" width="""180" height="120" />
-  <img src="http://madeoftree.net/media/images/wog/hang2.png" width="""180" height="120" />
-  <img src="http://madeoftree.net/media/images/wog/hang.png" width="""180" height="120" />    <br />
+  <img src="http://madeoftree.net/media/images/wog/throw.png" width="180" height="120" />
+  <img src="http://madeoftree.net/media/images/wog/hang2.png" width="180" height="120" />
+  <img src="http://madeoftree.net/media/images/wog/hang.png" width="180" height="120" />    <br />
   <em>Some core game rules abuse</em>
 </center>  
 
