@@ -8,7 +8,7 @@ time: 11:39:25
 I read [an article about the decline of FPS games](http://au.pc.ign.com/articles/121/1212393p1.html) and it made me think a bit. When was the last time I actually enjoyed an FPS game? I installed old [Deus Ex](http://en.wikipedia.org/wiki/Deus_Ex) a while ago but it's what 12 years old? [Team Fortress](http://www.teamfortress.com/) was okay, the one or two times I tried it, but I can't say I truly enjoyed it, hell I never even played it apart from trying it at a friends pc. Well I bought [Duke Nukem Forever](http://en.wikipedia.org/wiki/Duke_Nukem_Forever) but I haven't even completed it, it's best server collecting dust at the bookshelf now. No the truly last FPS I enjoyed was [CSS](http://store.steampowered.com/app/240/). How is this possible?
 
 <center>
-<img src="http://www.gotfrag.com/files/upload/monstro_dust2b_rushdubssmoked.jpg" width=400\\>  
+<img src="http://www.gotfrag.com/files/upload/monstro_dust2b_rushdubssmoked.jpg" width="400"\\>  
 *CSS: my one favorite FPS game.*
 </center>
 
@@ -20,7 +20,7 @@ Where is Evil Genius 2 for example? It's one of the best games ever but there's 
 
 We need to stop imitating and start innovating, but we also need to bring back the ideas of the classics.
 
-<center><img src="http://static2.cdn.ubi.com/emea/gamesites/anno/pc/content/screen1602_1_large.jpg" width=400 />  
+<center><img src="http://static2.cdn.ubi.com/emea/gamesites/anno/pc/content/screen1602_1_large.jpg" width="400" />  
 *Anno 1602, one of many classic constructor games. But where are they now?*
 </center>
 

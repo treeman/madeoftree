@@ -12,7 +12,7 @@ Anyway let's get this going!
 [A Geek Valentine](http://madeoftree.net/blog/a_geek_valentine) isn't a good game by any means, it's really nothing special. The gameplay sucked really bad. It's kinda funny as I told Sundb00m this would be my greatest game gameplay wise. *Yeah right..*
 
 ##Hard Work Work!   
-<center><a href="http://madeoftree.net/media/images/geek_workload.png"><img src="http://madeoftree.net/media/images/geek_workload.png" height="386" width="500"></a></center>
+<center><a href="http://madeoftree.net/media/images/geek_workload.png"><img src="http://madeoftree.net/media/images/geek_workload.png" height="386" width="""500"></a></center>
 
 This is a small graph which shows how I've worked for a straight week from the 22th to the 28th. The Y-axis is hours and the X-axis is days. The labels are for either work or break and the height of the green peaks if you check it on the Y-axis is the sum of both green and red. Green is for hours where I actually worked and the red is for when I had a break. You know food, clipping toenails, reading manga and playing counter-strike.
 

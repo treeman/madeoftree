@@ -9,8 +9,8 @@ So I physically built [the computer](http://madeoftree.net/blog/new_computer) an
 
 And while we're at dissing the old - I can never ever like another keyboard again! Well, at least not another rubber dome or scissor switch one.
 
-<center><img src="http://geekhack.org/attachment.php?attachmentid=21009&d=1310786771" width=300 height=200\\> 
-<img src="http://geekhack.org/attachment.php?attachmentid=20092&d=1309957367" width=300 height=200\\>  
+<center><img src="http://geekhack.org/attachment.php?attachmentid=21009&d=1310786771" width="300" height=200\\> 
+<img src="http://geekhack.org/attachment.php?attachmentid=20092&d=1309957367" width="300" height=200\\>  
 *Rubber dome and scissor switch*</center>
 
 No this day forward I'm a mechanical keyboard fantast. You might think I'm crazy but the difference is pretty huge, before my fingers got tired but now they don't and it's even fun to type again!
@@ -22,8 +22,8 @@ Back to my screen setup again - yes everything with my new computer is either th
 I set up a nice looking statusbar and some stuff on the desktop with [conky](http://conky.sourceforge.net/). I've been wanting to set up a todo list and while I was at it I put up my assignment due dates and my schedule too. And never forget the ever so important manga updates!
 
 <center>
-<a href="http://madeoftree.net/media/images/xmonad-left.png" ><img src="http://madeoftree.net/media/images/xmonad-left.png" width=180></a>
-<a href="http://madeoftree.net/media/images/xmonad-right.png" ><img src="http://madeoftree.net/media/images/xmonad-right.png" width=400></a>  
+<a href="http://madeoftree.net/media/images/xmonad-left.png" ><img src="http://madeoftree.net/media/images/xmonad-left.png" width="180"></a>
+<a href="http://madeoftree.net/media/images/xmonad-right.png" ><img src="http://madeoftree.net/media/images/xmonad-right.png" width="400"></a>  
 *My dual screen setup, click to enlarge*</center>
 
 A nice little feature I added down on the right is the time in various timezones, they adjust to summer time on their own dates and they change the abbreviations too - from CEST to CET and so on.
