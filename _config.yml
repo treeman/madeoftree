@@ -1,0 +1,6 @@
+
+pygments:   true
+permalink: /blog/:year/:month/:day/:title
+exclude: ["Rakefile", "TODO"]
+title: Madeoftree
+

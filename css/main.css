@@ -1,0 +1,290 @@
+/* HTML5-specific CSS setup */
+article,aside,figure,footer,header,hgroup,nav,section{display:block}
+
+html {
+}
+
+body {
+    font: normal 1em/1.5 Arial,Helvetica,sans-serif;
+    /*background: #2f2f2f;*/
+    color:#333;
+    /*background-image: url('black_thread.png');*/
+    /*background-repeat: repeat;*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration:none;
+    border-bottom:1px dotted;
+    /*color:#E74D35;*/
+    color:#296894;
+    /*color: #E8CB58;*/
+}
+
+ul {
+    list-style-type: circle;
+}
+
+#wrapper {
+    padding:0;
+    margin:0 auto;
+    width:60em;
+    background: #fff;
+    margin-bottom: 2em;
+}
+
+#content {
+    padding: 1em;
+    overflow: auto;
+}
+
+#content .split {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: block;
+}
+
+#content .games .split {
+    height: 27em;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    /*height:296px;*/
+    /*background: #2f2f2f;*/
+    background: #444;
+}
+
+/* hide text display in banner image instead */
+#header .text {
+    display:none;
+    text-indent: -3000px; /*sends the text off-screen*/
+    white-space: nowrap;  /*because only the first line is indented*/
+}
+
+#banner {
+    width:473px;
+    height:296px;
+    background-image:url('head.png');
+    float: left;
+    margin-left: 2em;
+}
+
+#header nav {
+    font-family: arial, helvetica, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    /*margin: 0 auto;*/
+    /*width : 100px;*/
+    /*width : 60em;*/
+    /*height: 10em;*/
+    font-size: 1.3em;
+    color: #fff;
+}
+
+#header nav ul {
+    /*padding: 16px 0 0 1em;*/
+    margin: 0 auto;
+    padding: 0;
+    width: 20em;
+    /*height: 4em;*/
+    height: 2.2em;
+    /*float: left;*/
+    /*text-align: center;*/
+}
+
+#header nav li {
+    display:block;
+    /*padding: 0.35em 0em;*/
+    /*text-align: center;*/
+    /*display: inline;*/
+    /*clear: both;*/
+}
+
+#header nav li a {
+    float: left;
+    padding: 0.35em 0.5em;
+    /*height: 1em;*/
+}
+
+#header nav .active {
+    /*background: #FEFFED;*/
+}
+
+#header nav a {
+    border: none;
+}
+
+#header nav a:link {
+    color: #fff;
+}
+#header nav a:visited {
+    color: #fff;
+}
+#header nav a:hover {
+    color: #999;
+}
+
+time {
+    float:right;
+    font-size:small;
+    margin:2px 0 0 0;
+}
+
+article header,section header {
+    color:#222;
+    margin:0;
+    padding:0;
+    /*font-family: georgia, arial, sans-serif;*/
+}
+
+/*.first {*/
+    /*color: #FFF;*/
+    /*background: #000;*/
+/*}*/
+
+h1 {
+    font-size:1.2em;
+}
+h2 {
+    font-size:1.1em;
+}
+h3 {
+    font-size:1.0em;
+}
+h4 {
+    font-size:0.9em;
+}
+h5 {
+    font-size:0.8em;
+}
+h6 {
+    font-size:0.7em;
+}
+
+/* code formatting */
+article pre {
+    border-style: dashed none;
+    border-width: 1px;
+    padding: 1em;
+}
+
+code .Keyword { color: #4565b6; }
+code .Comment { color: #7e7e7e; }
+code .Operator { color: #E01B6a; }
+code .DataType { color: #844FAD; }
+code .Function { color: #b68846; }
+code .String { color: #4dac6c; }
+code .Char { color: #ac924d; }
+code .BaseN { color: #ac4d55; }
+code .Variable { color: #ad68ac; }
+
+/* serve a code file from bin */
+#bin {
+    padding-left: 1em;
+    background: #fff;
+}
+
+.gamedownloads {
+    font-size: 1.3em;
+}
+
+.gamedownloads h1 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.gamedownloads ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gamedownloads li {
+    display: inline;
+    margin-right: 0.5em;
+}
+
+.games {
+    padding-bottom: 2em;
+}
+
+.games ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Remove borders around image */
+.games .img {
+    text-decoration: none;
+    border: 0 none;
+}
+
+footer {
+    text-align:center;
+    clear:both;
+    font-size: 0.9em;
+}
+
+footer .upper {
+    padding: 0 0 1em 0;
+    min-height: 10em;
+    overflow: hidden;
+    /*background: #fff;*/
+    /*border-top: thin solid #e1e1e1;*/
+    /*border-bottom: thin solid #e1e1e1;*/
+    background: #444;
+}
+
+footer .upper a {
+    color: #ddd;
+    border: none;
+}
+
+footer .upper nav {
+    width: 50em;
+    margin: 0 auto;
+}
+
+footer .lower {
+    padding: 1em 1em 1.3em 1em;
+    /*margin: 0 0 2em 0;*/
+    margin: 0;
+    overflow: hidden;
+    background: #FFF;
+}
+
+footer .footer_nav {
+    float: left;
+    display: inline;
+    text-align: left;
+}
+
+footer .footer_nav h1 {
+    font-size: 1.0em;
+    font-weight: none;
+    padding: 0;
+    margin-bottom: 0.5em;
+    border-bottom: thin solid #888;
+}
+
+footer .footer_nav h1 a {
+    border: none;
+}
+
+footer .footer_nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer_nav li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
