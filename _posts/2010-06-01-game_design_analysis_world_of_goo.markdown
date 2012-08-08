@@ -24,7 +24,7 @@ This is the second essay for the course Game Design and this thime I will be ana
 <center>
 ![World of Goo](http://madeoftree.net/media/images/wog/goo1.png)   
 *The first level*
-</center><br />
+</center>  
 
 The game is very simple. You begin with a structure and a few Goo balls, the charming balls bobbing around there, which you can drag and drop to build on the structure. Your goal is to reach the pipe and it will suck in the surviving Goo balls and you need to collect a certain amount of balls, in this case at least 4. All you ever use is your mouse and one button to pick up and place the balls.
 
@@ -34,7 +34,7 @@ The game is very simple. You begin with a structure and a few Goo balls, the cha
 ![WoG](http://madeoftree.net/media/images/wog/step-3.png)
 ![WoG](http://madeoftree.net/media/images/wog/step-4.png)   
 *A step by step of the core mechanics*
-</center><br />
+</center>  
 
 The beginning levels are very easy but it will get increasingly harder and you have to plan your building so you don't use up too many Goo balls.
 
@@ -43,7 +43,7 @@ But as it's a physics game you will also have to think about gravity so your tow
 <center>
 ![Collapsing bridge](http://madeoftree.net/media/images/wog/bridge.png)   
 *Oh noes my bridge is collapsing!*
-</center><br />
+</center>  
 
 That's about the whole game concept right there; build structures to reach the pipe but use so few balls, or building blocks, as you can. You might think that it's a shallow game with doing the same thing over and over – but you couldn't be more wrong, there are a lot of different Goo balls to play around with; sticky balls, dangling balls, exploding balls, shooting balls, removable balls and more which will force you to change your build process in different directions. The level design is simply fantastic and it challenges your constructions and it makes the game very varied.
 
@@ -51,14 +51,14 @@ That's about the whole game concept right there; build structures to reach the p
 ![Cool levels](http://madeoftree.net/media/images/wog/balloons.png)
 ![Cool levels](http://madeoftree.net/media/images/wog/sticky.png)   
 *The levels are both fun and diverse*
-</center><br />
+</center>  
 
 The game which inspired World of Goo, namely Tower of Goo was an experimental one week, one person game with the aim of simply building a high tower and you can still do that in World of Goo in a sandbox mode and you can compete online on who makes the highest tower.
 
 <center>
 ![Levels](http://madeoftree.net/media/images/wog/levels.png)   
 *The level chooser screen, be proud of those flags!*
-</center><br />
+</center>  
 
 If you like challenges there's more to do: for every level there's this extra hard ending criteria – a challenge – for you to get gray hairs from. There's time challenges, constraints on number of moves and a minimum of balls collected and some of them are extremely though. If you're successful you'll get a nice little flag on the level chooser screen.
 
@@ -67,7 +67,7 @@ The game is quite large with 5 different chapters and there's around 10 levels e
 <center>
 ![Woo the world](http://madeoftree.net/media/images/wog/chapters.png)   
 *The 5 chapters + sandbox (Tower of Goo) is the World of Goo*
-</center><br />
+</center>  
 
 [Back to top](#top)
 
@@ -89,7 +89,7 @@ When you hover your cursor over moving Goo balls or removable joints you'll get 
 <img src="http://madeoftree.net/media/images/wog/shooting.png" width=130  height = 100 />
 <img src="http://madeoftree.net/media/images/wog/block.png" width=130  height = 100 />    
 *Selecting, building, shooting and moving*
-</center><br />
+</center>  
 
 Visual confirmation in all honor but what really makes actions clear is the sounds. For every Goo ball hovered over and every joint constructed there's a short confirmation of your action and for every dead Goo and every block crashed there's an unique sound to let you know that something bad happened here in your little world. Every Goo that go down the pipe will emit a happy little laugh and you just love the hear that extra peculiar laugh which will tell you if you did complete the extra level challenge. 
 
@@ -108,7 +108,7 @@ One thing the game does is introduce new Goo balls all the time; balls you can r
 ![World of Goo](http://madeoftree.net/media/images/wog/liftoff.png)
 ![World of Goo](http://madeoftree.net/media/images/wog/climb.png)   
 *Lifting off and climbing is possible thanks to different Goo balls*
-</center><br />
+</center>  
 
 Even Goo's with minor changes like industrial Goo which you can't control or dangling Goo which will only dangle down gives a lot of depth to the game thanks to the great level design.
 
@@ -118,7 +118,7 @@ Even Goo's with minor changes like industrial Goo which you can't control or dan
 <img src="http://madeoftree.net/media/images/wog/bone.png" width=130  height = 100 />
 <img src="http://madeoftree.net/media/images/wog/cutter.png" width=130  height = 100 />     
 *There are lot's and lot's of levels which change the way you play*
-</center><br />
+</center>  
 
 It's not just build straight up; it's build around, use balloons to topple the tower from island to island and it's surprising how hard it is to build a tower in water or in a tumbler, you really have to stop and think or else it won't work. The game is constantly varying it's mechanics and you have to change with it, you have to evolve to keep up.
 
@@ -128,7 +128,7 @@ Perhaps the most radical experiment is the fourth chapter. We get new Goo's that
 ![World of Goo](http://madeoftree.net/media/images/wog/shoot-build.png)
 ![World of Goo](http://madeoftree.net/media/images/wog/world-gravity.png)   
 *Shooting Goo?*
-</center><br />
+</center>  
 
 Still staying true to the basic mechanics, select ball, drag n drop for effect with some physics and this could easily have been a game of it's own.
 
@@ -138,7 +138,7 @@ Going the other way around World of Goo also experiments with the drag n' drop o
 ![World of Goo](http://madeoftree.net/media/images/wog/blocking.png)
 ![World of Goo](http://madeoftree.net/media/images/wog/tower-of-blocks.png)   
 *Block Goo; immobile and blocky but yet they manage to add something to the game*
-</center><br />
+</center>  
 
 All in all World of Goo uses their simple core concept to it's limit with a ton of variation and experimentation and it makes the game feel novel all the way through those 50+ levels.
 
@@ -154,7 +154,7 @@ You can for example make it easier through this level if you force your structur
 ![World of Goo](http://madeoftree.net/media/images/wog/small.png)
 ![World of Goo](http://madeoftree.net/media/images/wog/small2.png)   
 *Small structures are easier to move around*
-</center><br />
+</center>  
 
 This happens because in the rules you can only break a structure if you either drop it into the ocean or on spikes, and loose them forever, or if you connect with a special construction destroying cogs. Here we exceed the tension and the compression and instead of breaking we get our joints twisted.
 
@@ -165,7 +165,7 @@ You even have to abuse the rules because the extra hard level goals can't be bea
 <img src="http://madeoftree.net/media/images/wog/hang2.png" width=180  height = 120 />
 <img src="http://madeoftree.net/media/images/wog/hang.png" width=180  height = 120 />    
 *Some core game rules abuse*
-</center><br />
+</center>  
 
 **The left picture:**   
 In World of Goo in some levels there are sleeping goo balls which you can't get control of if you don't get your construction close enough. But you can pick up and move around the balls and even throw them and if you do you can actually make the sleeping balls bounce around too. If you throw at the right angle you can bounce the sleeping balls close enough your structure and they'll wake up.
@@ -186,7 +186,7 @@ The game is more or less a closed system but if you're interested it isn't too h
 ![World of Goo](http://madeoftree.net/media/images/wog/color.png)
 ![World of Goo](http://madeoftree.net/media/images/wog/jingleballs2.png)   
 *Colorful balloons and a new Christmas level*
-</center><br />
+</center>  
 
 There's even a tool, [GooTool][gootools], which is a tool which let's you manage your installed mods, manage your profile stats, general options like screen resolution and even add in your own language.
 

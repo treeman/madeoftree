@@ -18,7 +18,7 @@ Fun isn't created on the spot - it's created through iterations. It's like carvi
 
 <center>
 ![](http://madeoftree.net/media/images/balls-leap.png)   
-*This quantum leap wasn't achieved with a big chop, but with many smaller ones*</center><br />
+*This quantum leap wasn't achieved with a big chop, but with many smaller ones*</center>  
 
 **Get things done**   
 This is the thing that changed with me the most. At first I thought games where all about the planning stage - the idea stage. It's important to have a great idea and it's good to write down things sure but you can't just sit on your ass doing the big talk and not actually do anything. As said about iteration you can't make the game perfect from the start and you can't the whole game from the start either. The game will change and your idea about what's good for the game will change too. 

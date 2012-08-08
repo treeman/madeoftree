@@ -3,8 +3,8 @@ layout: post
 title: "Postmortem: A Geek Valentine"
 category: Postmortems
 tags: Postmortems,7days
-time: 12:01:46
 ---
+
 Ah man the mush in my brain is finally letting go and I'm starting to feel this tiny little programming urge again... This time it's not Haskell or a new experimental game that's luring me on, no this time it's me longing to create this *fantastic awesome epic* RTS game. Sadly it's a long way to go there...
 
 Anyway let's get this going!
@@ -30,8 +30,10 @@ About the game let's start with the positive stuff. I really like how the game l
 ##Do something you Like   
 Like with a Big L. I felt I had a really nice idea going for this one. In the end it looked and felt like a bad pacman clone but this wasn't what I had in mind *at all*. The idea was to build cool trap-combos sort of like in the *Epic Game Evil Genius*.
 
-<center>![](http://wiki.n1nj4.com/images/a/a3/Ubertrap1.jpg)   
-*Here's a plan for an über-trap in Evil Genius*</center><br />   
+<center>
+    <img src='http://wiki.n1nj4.com/images/a/a3/Ubertrap1.jpg' /><br />
+    <em>Here&#8217;s a plan for an über-trap in Evil Genius</em>
+</center>
 
 I really love Evil Genius and especially the base building but let's face it - I failed. But the idea kept motivating me and it was really fun to try to make it happen.
 

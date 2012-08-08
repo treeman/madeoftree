@@ -11,6 +11,7 @@ This is why I'm giving me an early Christmas gift: *I won't make the December ga
 
 But there are downsides of course. I'm breaking my rules which is... bad and I don't have that productivity boost I always get when under a deadline so now I'm pretty far behind.
 
-<center>![](http://madeoftree.net/media/images/pow.png)</center>   
+<center><img src="http://madeoftree.net/media/images/pow.png" /></center>
+
 But the screenshot looks promising doesn't it?
 

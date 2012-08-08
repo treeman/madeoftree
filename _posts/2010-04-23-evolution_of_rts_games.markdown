@@ -38,7 +38,7 @@ The game introduced the concept of a tech-tree (Technology Tree) where you could
 <center>
 ![Dune 2](http://madeoftree.net/media/images/rts/dune-2.png)   
 *The sandy land of Dune 2*
-</center><br />
+</center>  
 
 Perhaps the most revolutionary concept Dune introduced was the resource system. To build things you had to have spice, the game's only resource, and to get spice you had to harvest it on the map and bring it home to convert it to money and then units or buildings. What this practically means is the player had to have control of the map, he had to have a place he could get spice or else he would probably die. The concept of map-control is something that is driving virtually all RTS games to date.
 The first online capable game was Warcraft: Orcs and Humans (1994) but the online boom wouldn't come just yet. Instead it was the game Command & Conquer (1995) who refined RTS a bit more. It wasn't a graphical masterpiece nor very complex instead it's simple but it just works. The game screams atmosphere and war. All the units were pretty straightforward (I mean who doesn't know an apache, a rocket launcher or an M1A1 tank?) so it was pretty easy to pick up. But beneath the simple exterior lay a surprisingly deep game.
@@ -60,7 +60,7 @@ Command & Conquer Red Alert (1996) was the original C&C but more and better. It 
 <center>
 ![Command & Conquer Red Alert](http://madeoftree.net/media/images/rts/redalert.png)   
 *We can spot Red Alert's mighty mammoth tank*
-</center><br />
+</center>  
 
 If you think about classical RTS games the chances are high you'll think about Age of Empires (1997). The game is one of the most influential RTS games and if you've ever played it it's easy to see why. It's balanced, polished and very deep. It's one of the first games to introduce the concept of “Ages”, essentially tiers in a tech tree. There are four ages which let's you progress from the very basic clubmen to advanced bowmen and even war elephants. The whole system is nicely done and the progression to higher tiers is fluent and it adds a lot of depth to the game. The resource system is still one of the most complex in any RTS with a whopping four resources for you to balance. Another new concept was the random maps. This way every game was a whole new experience with lots of different chokes and the importance of scouting was set on a whole new level.
 
@@ -77,7 +77,7 @@ Why did this game become so popular? I don't know; it took almost a decade to ge
 <center>
 ![Starcraft 2](http://madeoftree.net/media/images/rts/sc.png)   
 *Starcraft 2, the most successful RTS game yet*
-</center><br />
+</center>  
 
 [Back to top](#top)
 
@@ -95,7 +95,7 @@ The focus on heroes and abilities made the game really micro intense (taking car
 <center>
 ![Warcraft 3](http://madeoftree.net/media/images/rts/Warcraft-3.png)   
 *A human player harassing an Orc in Warcraft 3*
-</center><br />
+</center>  
 
 Command & Conquer Generals (2003) shifted the focus for the C&C series. It made the building panel a bit more free, so you could easier build where and what you wanted, it had radically different factions and sub-factions but it had a very poor story but perhaps the most noteworthy addition was that upgrade change unit behavior instead of simply making them deal +1 damage. For example infantry was weak against tanks but with an armor-piercing upgrade they could destroy it.
 
@@ -111,7 +111,7 @@ Company of Heroes (2006) is a pretty special game. It fuses the cinematic experi
 <center>
 ![Company of Heroes](http://madeoftree.net/media/images/rts/coh.png)   
 *The immersion of Company of Heroes is simply stunning*
-</center><br />
+</center>  
 
 World in Conflict (2009) took the tactics even further and is considered an RTT – Real Time Tactics. In WiC there are no resources, just a sum given in the start of the game for you to call in units with. When the units are killed the points are slowly given back ensuring you won't run out of units. The game is solely focused on controlling your units and thus isn't really a true RTS in my eyes but a game bordering between the two.
 
@@ -120,7 +120,7 @@ Supreme Commander (2007) is the spiritual successor to Total Annihilation and it
 <center>
 ![Supreme Commander: Forged Alliance](http://madeoftree.net/media/images/rts/fa.png)   
 *Me and Toejams showing off in Supreme Commander*
-</center><br />
+</center>  
 
 Today there are both big scaled games like Hearts of Iron III (2008) and small-scale like Company of Heroes. There are games that relies on the old tried-but-true formula (Starcraft 2 currently in beta) and other more novel (Darwinia 2005). If you look closely you'll notice the core the old RTS games are still here, unchanged. Starcraft 2's resource system is basically the same as in Dune II and grouping are still the same as in the original C&C. Games are still living on, and building on, the successful ideas of the past (the new C&C, AoE3 etc) and I personally think they will continue to entertain us, Dune II style, for at least a couple of decades more.
 
