@@ -23,7 +23,7 @@ title: Welcome to the Archives
 
         <li>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            <time datetime="{{ post.date }}" pubdate>{{ post.date | date_to_long_string }}</time>
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %e, %Y" }}</time>
         </li>
     {% endfor %}
     </ul>
