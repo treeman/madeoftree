@@ -5,6 +5,7 @@ category: Prototyping
 tags: 7days,Evaluation
 time: 11:26:56
 ---
+
 It's been nine months since I started doing Experimental Games and I think it's time to evaluate and maybe go in a new direction.
 
 [At first](http://madeoftree.net/blog/the_first_worst_post) I had been stuck for ages with my never-ending projects and I had literally nothing to show for all my coding. Well now things have changed a bit: I've successfully released *seven experimental games*, games that more or less are playable, working and sometimes even fun! These months have taught me that games aren't impossible year long projects, they don't have to be perfect to be enjoyable and above all they taught me to get things done!
@@ -17,8 +18,9 @@ Don't try to make the game perfect from the start cause it won't be perfect and 
 Fun isn't created on the spot - it's created through iterations. It's like carving a wood figure. You don't create it with a big slash, you carefully chop the wood off little by little until the figure is complete. This is how I think good, fun games are made.
 
 <center>
-![](http://madeoftree.net/media/images/balls-leap.png)   
-*This quantum leap wasn't achieved with a big chop, but with many smaller ones*</center>  
+  <img src="http://madeoftree.net/media/images/balls-leap.png"><br />
+  <em>This quantum leap wasn't achieved with a big chop, but with many smaller ones</em>
+</center>
 
 **Get things done**   
 This is the thing that changed with me the most. At first I thought games where all about the planning stage - the idea stage. It's important to have a great idea and it's good to write down things sure but you can't just sit on your ass doing the big talk and not actually do anything. As said about iteration you can't make the game perfect from the start and you can't the whole game from the start either. The game will change and your idea about what's good for the game will change too. 
@@ -35,19 +37,22 @@ In retrospect I should have had an overall goal for my experimental games too. I
 
 Mind you I've had lots and lots of fun making these games and the games who were the most fun to play were also the ones I had the most fun making. You could divide my games into three categories I think.
 
-*The beginning: **Fun***   
-[Balls](http://madeoftree.net/blog/balls)   
-[Black and White](http://madeoftree.net/blog/black_and_white)
+The beginning: **Fun**
 
-*The middle: **Really Fun***   
-[Bugger](http://madeoftree.net/blog/bugger)   
-[MenuCity](http://madeoftree.net/blog/menucity)   
-[Jonas IceCream Stand](http://madeoftree.net/blog/jonas_icecream_stand)   
-*Failed game: The Zed Worker Party* 
+* [Balls](http://madeoftree.net/blog/balls) 
+* [Black and White](http://madeoftree.net/blog/black_and_white)
 
-*The end: **Not so Fun***   
-[The Chronicles of Bim: The 100 Fake Afros](http://madeoftree.net/blog/the_chronicles_of_bim_the_100_fake_afros)   
-[A Geek Valentine](http://madeoftree.net/blog/a_geek_valentine)
+The middle: **Really Fun**
+
+* [Bugger](http://madeoftree.net/blog/bugger)
+* [MenuCity](http://madeoftree.net/blog/menucity)
+* [Jonas IceCream Stand](http://madeoftree.net/blog/jonas_icecream_stand)
+* *Failed game: The Zed Worker Party*
+
+The end: **Not so Fun**
+
+* [The Chronicles of Bim: The 100 Fake Afros](http://madeoftree.net/blog/the_chronicles_of_bim_the_100_fake_afros)
+* [A Geek Valentine](http://madeoftree.net/blog/a_geek_valentine)
 
 The funny thing about this is that it works really really well both ways. Both how fun the games are and how fun I thought it was to make them. I think this is an indication for all you game developers out there: **Have Fun**, not only will you live a happier and longer life but the game will also be a lot more fun!
 

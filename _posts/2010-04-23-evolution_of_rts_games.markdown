@@ -17,7 +17,7 @@ time: 10:00:40
 
 [Original essay here](http://madeoftree.net/files/download/rts_final.doc). This post is just a reformatted version with pictures.
 
-###Introduction<a name="introduction"></a>
+<h1><a name="introduction">Introduction</a></h1>
 This is an essay for the course Game Design and I'm going to give you a ride through the evolution of RTS game genre. I like RTS games and I've played them for as long as I can remember, from the classic Red Alert and Age of Empires to the newer Supreme Commander and Starcraft 2 (beta).
 
 First of all what is a Real Time Strategy game? How do we narrow it down? The first distinction I'd like to draw is the Real Time part. Games like chess and civilization are most certainly strategy games but they are not executed in real time. Instead you wait for your turn and then make your move. Turn-based games like these are in my mind not RTS games. Neither are “God games” like SimCity and The Sims. You have very few boundaries and you can do what you want, when you want and how you want. But I think of RTS games more as a competition – a race against time.
@@ -28,7 +28,7 @@ I will focus more on the beginning RTS games as they are still the main influenc
 
 [Back to top](#top)
 
-###The journey begins<a name="journey"></a>
+<h1><a name="journey">The journey begins</a></h1>
 In the beginning there was no RTS games. Hard to imagine I know but that's the truth. When the idea of RTS was born the gaming scene looked a lot different from now. In the 1980's Nintendo had blown new life into the video game industry and it was the simple games that held us entertained, games like Pong, Tetris and Pac-Man. However the tides were shifting and more advanced games like SimCity were on the rise.
 
 Dune II (1992) wasn't the first RTS game, there had been several games with RTS influence in them but this was the first complete RTS. The game was all about control. You chose exactly what units to build and when to build them and you could command every single unit at will – perhaps drive it across the map to check what your opponent is building?
@@ -49,7 +49,7 @@ Instead of the “tank, bigger tank, biggest tank” from Dune C&C furthered the
 
 [Back to top](#top)
 
-###The RTS Boom<a name="boom"></a>
+<h1><a name="boom">The RTS Boom</a></h1>
 Warcraft II: Tides of Darkness (1995) became the first mega-successful RTS game. For some the interface was a letdown with no groups or build queues but instead it introduced the standard right click. Example with a peon: if you right click on a gold mine he will harvest and if you click on an enemy he will attack. It also allowed you to build anywhere opening for the oh so popular tower rush (build offensive defense towers). For the first time we got to have full naval battles with battleships, submarines and even a very own naval-resource. They improved the shroud and turned it into the now standard Fog of War where the fog regrows if you don't have any units there.
 
 But the thing that really set Warcraft II apart was the online multiplayer. A huge community gathered and spawned leagues, clans and ladders and essentially creating the base of modern competitive RTS gaming.
@@ -81,7 +81,7 @@ Why did this game become so popular? I don't know; it took almost a decade to ge
 
 [Back to top](#top)
 
-###Life after the Boom<a name="after_boom"></a>
+<h1><a name="after_boom">Life after the Boom</a></h1>
 The success of RTS as a genre sparked the creation of a lot of pretty similar, but often very good, games like one of my personal memories KKnD (1997). However it didn't take long until the next big revolution: true 3D brought to you by Homeworld (1999). Total Annihilation had used 3D terrain but Homeworld set the player in space and gave the freedom of the Z-dimension. Instead of just moving on a flat, albeit bumpy, surface you could now move freely in any direction you'd like. In addition Homeworld became known for it's atmospheric and rich story and they introduced persistence in the single player campaign. It means that you would retain all of your units and upgrades from your last mission and if you had finished it badly with only a few units the next mission would prove impossible and you had to replay it.
 
 Building on a concept and improving it has been heavily used in RTS and it has brought us some of the very good games. Age of Empires II (1999) was all of the original but better. Command & Conquer: Red Alert 2 (2000) upped the pace of of older C&C games and created a fun, with some good humor, easy to pick up but hard to master classic RTS game. Red Alert 2 still had a cartoony 2D look who many loved but it was to become one of the last 2D RTS games.
@@ -105,7 +105,7 @@ Dawn of War: Warhammer 40,000 (2004) changed the well known resource system, ins
 
 [Back to top](#top)
 
-###The modern age<a name="modern"></a>
+<h1><a name="modern">The modern age</a></h1>
 Company of Heroes (2006) is a pretty special game. It fuses the cinematic experience from an FPS with the tactical and strategical depth from an RTS. You command a lot less units and you're a lot closer to the battlefield. The environment is almost fully destructible and your units will take shelter behind anything they can find. Things like where you attack a tank became important as the armor was considerably weaker in the back and ammunition and fuel was considered a scarce resource.
 
 <center>
@@ -126,14 +126,14 @@ Today there are both big scaled games like Hearts of Iron III (2008) and small-s
 
 [Back to top](#top)
 
-###Conclusion<a name="conclusion"></a>
+<h1><a name="conclusion">Conclusion</a></h1>
 We've been through the evolution of the RTS from the beginning with Dune II until modern games like Supreme Commander and World in Conflict. The simple one resource system has given birth to four and even six resource systems and some games have opted for “map points” or different infinite resources. The simple shroud concept has turned into the now standard Fog of War and there has been some advanced intelligence gathering going on in a few games. The Hero concept with borrowed RPG elements are now standard in many games and the tech tree has been branched into several different flavors. The scale has both been amplified and minimized and units has differentiated themselves from each other.
 
 Thanks to the online multiplayer pioneered almost 15 years ago has turned a little niche genre into a mega-industry with competitions held in several different games and countries. But where the genre is heading is anyones guess, but whichever way it's heading I'm sure it will continue to entertain and surprise you.
 
 [Back to top](#top)
 
-### References<a name="references"></a>
+<h1><a name="references">References</a></h1>
 
 Everything accessed 21 mars 2010
    
