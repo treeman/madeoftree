@@ -1,1 +1,6 @@
 * Fix <center> surrounding markdown.
+* Fix images
+    There are some direct to http://madeoftree.net/...
+    Others exist on aws storage.
+* Youtube embedding of some sort
+

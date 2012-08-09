@@ -22,7 +22,9 @@ Firstly, the specs:
 **Case:** Fractal Design Define R3, Black  
 
 Secondly, the look:  
-<img src="/media/images/overall1.jpg" width="600" />
+<center>
+  <img src="/media/images/overall1.jpg" width="600" />
+</center>
 
 I wanted the computer to be fast and silent and I *had* to have two screens. I had a budget of 12,000 SEK and almost managed it too.
 
@@ -38,8 +40,10 @@ I also wanted it to be quiet and according to some who probably knows better tha
 
 The case looks good and it was also solid, no qualms there. But the one big issue I had was the graphics card, oh how hard it was! I wanted something silent, something from Nvidia (Ati drivers used to suck on linux, but maybe not anymore), something that's reasonably powerful and also cheap. Not a bad combination I say! I think I chose something reasonably good - the fan is very silent, it's a good chipset and it wasn't all too expensive. However I haven't gotten any games to work with it on linux but that's probably a configuration issue, annoying anyway.
 
-<center><img src="/media/images/das3.jpg" width="600" />
-*Keyboard, Das Keyboard*</center>
+<center>
+  <img src="/media/images/das3.jpg" width="600" />
+  <em>Keyboard, Das Keyboard</em>
+</center>
 
 The keyboard, oh the keyboard! I got it in my head that I had to have a mechanical keyboard, they're supposed to be a lot better than the "regular" ones. And oh yeah it's absolutely wonderful, it's a joy to type in and I'm already irking when I have to go back typing on another keyboard. But it is a tad too load according to Veronica, and it was oh so *expensive*.
 

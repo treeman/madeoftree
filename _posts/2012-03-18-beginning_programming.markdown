@@ -5,6 +5,7 @@ category: Learning Programming
 tags: Learning,Programming,Learning Programming
 time: 15:26:46
 ---
+
 I read a wonderful post, [3 Things I hate about “beginner” programming books][beginner], which I couldn't agree more with. Basically he has these points:
 
 1. Too long

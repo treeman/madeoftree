@@ -27,6 +27,8 @@ I'm probably gonna program, make a game or two, go through a language, read some
 
 No I need to relax. Maybe read some more manga? Yes, that is indeed a good idea...
 
-<center><img src="http://i.imgur.com/WwR5X.jpg" width="400" />  
-*manga...*</center>
+<center>
+  <img src="http://i.imgur.com/WwR5X.jpg" width="400" /><br />
+  <em>manga...</em>
+</center>
 

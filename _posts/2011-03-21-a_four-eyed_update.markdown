@@ -8,9 +8,9 @@ time: 12:25:58
 Wow it's been a while! Almost a month and a half since my [last update](http://madeoftree.net/blog/a_week_of_headache). There I complained about my almost constant headaches which hampered me a lot actually. Luckily now I have joined the rank of cool.
 
 <center>
-<img src="http://ftp.sunet.se/pub/pictures/comics/Marvel/FleerUltraXMen95/Cyclops.jpg" width="200" height="207">
-<img src="http://widellinhosweblog.blogg.se/images/2010/clark-kent_110954353.jpg" width="200">  
-*Glasses: makes the cool cooler*
+  <img src="http://ftp.sunet.se/pub/pictures/comics/Marvel/FleerUltraXMen95/Cyclops.jpg" width="200" height="207" />
+  <img src="http://widellinhosweblog.blogg.se/images/2010/clark-kent_110954353.jpg" width="200" /><br />
+  <em>Glasses: makes the cool cooler</em>
 </center>
 
 I took home three frames I think and tried them out and I settled some I thought were fairly good looking, nothing special mind you but at least they didn't look horrible on me. Then I went back and I settled on the semi-expensive ones and then I waited. And waited. Then I went back and asked but the glasses didn't fit into the price class I'd chosen, something about the frames being too bent, so I had to pay some more.

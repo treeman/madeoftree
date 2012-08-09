@@ -5,7 +5,8 @@ category: Game Design Course
 tags: Game Design,Analysis
 time: 16:00:10
 ---
-<a name="top"></a>
+
+<a name="top">Top</a>
 
 1. [Introduction](#introduction)
 1. [Analysis](#analysis)
@@ -18,7 +19,7 @@ time: 16:00:10
 
 [Original essay here](/files/download/world_of_goo_analysis.doc).
 
-##Introduction<a name="introduction"></a>
+<h1><a name="introduction">Introduction</a></h1>
 This is the second essay for the course Game Design and this thime I will be analysing the game [World of Goo][wog] a bit.
 
 <center>
@@ -70,14 +71,14 @@ The game is quite large with 5 different chapters and there's around 10 levels e
 
 [Back to top](#top)
 
-##Analysis<a name="analysis"></a>   
+<h1><a name="analysis">Analysis</a></h1>
 
 1. [Actions and confirmation](#actions)
 1. [Varying the mechanics](#mechanics)
 1. [Consequences of the rules](#rules)
 1. [Mods](#mods)
 
-###Actions and confirmation<a name="actions"></a>
+<h2><a name="actions">Actions and confirmation</a></h2>
 
 One of the things World of Goo does really well is to communicate to the player. When a first time player loads the first level it's almost always clear what to do, you have this helpful sign showing your first move (drop a goo ball here) and you have this curious looking pipe just above you and not much else to distract you. After each level you get a score screen on how you did and both the level and world screen are helpfully showing your progress and what to do next. But to me the most impressive thing is how your actions are handled.
 
@@ -99,7 +100,8 @@ Although simple the visual and auditive feedback works absolutely wonderful and 
 
 [Back to top](#top)
 
-###Varying the mechanics<a name="mechanics"></a>
+<h2><a name="mechanics">Varying the mechanics</a></h2>
+
 The concept of the whole game is really quite simple, create structures with drag n' drop Goo balls, add in some simple physics and you're done. It's amazing how captivating something simple as this can be and I believe it has a lot to do with the small incremental changes the game makes all the time.
 
 One thing the game does is introduce new Goo balls all the time; balls you can remove multiple times force you to climb and restructure, balloon Goos create interesting aerial acrobatics and a sticky Goo makes the structure mobile. 
@@ -144,7 +146,7 @@ All in all World of Goo uses their simple core concept to it's limit with a ton 
 
 [Back to top](#top)
 
-###Consequences of the rules<a name="rules"></a>
+<h2><a name="rules">Consequences of the rules</a></h2>
 
 World of Goo is a physics based game; when building structures you need to compensate against gravity so your tower won't collapse and you need to make sure your structure has enough joints so it can withstand tension and compression. Physics games are hard to create, you can't rely on a perfect representation as it's too hard to simulate perfectly and there are many edge cases you'll have to handle.
 
@@ -178,7 +180,7 @@ In a level there's a huge head which hangs from a small hook. When you've explod
 
 [Back to top](#top)
 
-###Mods<a name="mods"></a>
+<h2><a name="mods">Mods</a></h2>
 
 The game is more or less a closed system but if you're interested it isn't too hard to create new levels, alter the online scoreboard (which has happened a lot) or even add new Goo balls. The site goofans.com is a dedicated site which collects fan-made levels and mods.
 
@@ -194,7 +196,7 @@ These changes, these mods, are mainly geared towards resources and not the actua
 
 [Back to top](#top)
 
-##Conclusion<a name="conclusion"></a>
+<h1><a name="conclusion">Conclusion</a></h1>
 
 I think World of Goo is an excellent game and there are so many things it does right. The game is good about telling you what to do and when you've done something good by using both visuals and sound effects. The game basic foundation of the game is really quite simple but they manage to create a lot of diversity and this fresh feel throughout the whole game by introducing small, and big, variations to the core mechanics.
 
@@ -204,7 +206,7 @@ There are a few mods and new levels out there if you hunger for more and with a 
 
 [Back to top](#top)
 
-##References<a name="references"></a>
+<h1><a name="references">References</a></h1>
 
 Salen & Zimmerman, 2004. Rules of Play. The MIT Press.
 
