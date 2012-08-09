@@ -242,9 +242,44 @@ footer .upper a {
     border: none;
 }
 
-footer .upper nav {
-    width: 50em;
+footer .upper .center {
+    /*width: 50em;*/
+    width: 40%;
     margin: 0 auto;
+}
+
+footer nav {
+    float: left;
+    display: inline;
+    text-align: left;
+    padding: 1em;
+
+    /*width: 20%;*/
+    /*height: 100%;*/
+    /*float: left;*/
+    /*display: block;*/
+}
+
+footer nav h1 {
+    font-size: 1.0em;
+    font-weight: none;
+    padding: 0;
+    margin-bottom: 0.5em;
+    border-bottom: thin solid #888;
+}
+
+footer nav h1 a {
+    border: none;
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer nav li {
+    list-style-type: none;
+    margin-right: 1em;
 }
 
 footer .lower {
@@ -253,33 +288,5 @@ footer .lower {
     margin: 0;
     overflow: hidden;
     background: #FFF;
-}
-
-footer .footer_nav {
-    float: left;
-    display: inline;
-    text-align: left;
-}
-
-footer .footer_nav h1 {
-    font-size: 1.0em;
-    font-weight: none;
-    padding: 0;
-    margin-bottom: 0.5em;
-    border-bottom: thin solid #888;
-}
-
-footer .footer_nav h1 a {
-    border: none;
-}
-
-footer .footer_nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-footer .footer_nav li {
-    list-style-type: none;
-    margin-right: 1em;
 }
 
