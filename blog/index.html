@@ -3,5 +3,9 @@ layout: page
 title: Weblog
 ---
 
-Sup dawg?
+{% assign posts = site.posts %}
+{% assign listing_limit = 10 %}
+{% include posts.html %}
+
+<a href="/archive">Find more posts in the archive</a>
 

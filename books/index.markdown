@@ -3,6 +3,9 @@ layout: page
 title: "Book Recommendations"
 ---
 
+Book Recommendations
+====================
+
 Updated January 1, 2012
 ------
 

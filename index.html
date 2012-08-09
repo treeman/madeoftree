@@ -3,5 +3,11 @@ layout: page
 title: Hello World!
 ---
 
-Hello World!
+<h1>Hello!</h1>
+
+<p>I'm Jonas, a programmer of sorts and this is my site where I place my projects, games and I occassionally write about stuff.</p>
+
+{% assign posts = site.posts %}
+{% assign listing_limit = 5 %}
+{% include posts.html %}
 

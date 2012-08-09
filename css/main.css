@@ -147,7 +147,8 @@ article header,section header {
 /*}*/
 
 h1 {
-    font-size:1.2em;
+    font-size:1.3em;
+    padding-top: 0.4em;
 }
 h2 {
     font-size:1.1em;
@@ -181,12 +182,6 @@ code .String { color: #4dac6c; }
 code .Char { color: #ac924d; }
 code .BaseN { color: #ac4d55; }
 code .Variable { color: #ad68ac; }
-
-/* serve a code file from bin */
-#bin {
-    padding-left: 1em;
-    background: #fff;
-}
 
 .gamedownloads {
     font-size: 1.3em;

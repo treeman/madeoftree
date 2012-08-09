@@ -1,7 +1,8 @@
 
+paginate: 10
 pygments: true
 permalink: /blog/:year/:month/:day/:title
 exclude: ["Rakefile", "TODO", "CNAME"]
 title: Madeoftree
-url: http://treeman.github.com
+url: http://madeoftree.se
 
