@@ -46,6 +46,10 @@ h6 {
     font-size:0.7em;
 }
 
+.center {
+    text-align: center;
+}
+
 #wrapper {
     padding:0;
     margin:0 auto;
