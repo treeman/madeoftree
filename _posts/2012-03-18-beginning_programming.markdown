@@ -2,7 +2,7 @@
 layout: post
 title: "Beginning Programming"
 category: Learning Programming
-tags: Learning,Programming,Learning Programming
+tags: [Learning, Programming, Learning Programming]
 time: 15:26:46
 ---
 

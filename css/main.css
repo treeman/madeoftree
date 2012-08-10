@@ -128,7 +128,7 @@ ul {
     color: #999;
 }
 
-time {
+li time {
     float:right;
     font-size:small;
     margin:2px 0 0 0;
