@@ -1,7 +1,6 @@
-* Fix <center> surrounding markdown.
 * Fix images
     There are some direct to http://madeoftree.net/...
     Others exist on aws storage.
-* Youtube embedding of some sort
-* Remove the use of <center>!
+* Remove the use of <center>! Deprecated since html 4.x or something...
+    Replace with <div class="center">...</div>
 
