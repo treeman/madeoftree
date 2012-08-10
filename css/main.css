@@ -253,8 +253,11 @@ footer .upper a {
 
 footer .upper .center {
     /*width: 50em;*/
-    width: 60%;
+    /*width: 60%;*/
+    /*margin: 0 auto;*/
     margin: 0 auto;
+    padding: 0;
+    width: 45em;
 }
 
 footer nav {
