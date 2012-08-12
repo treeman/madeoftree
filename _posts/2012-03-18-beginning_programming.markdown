@@ -6,6 +6,8 @@ tags: [Learning, Programming, Learning Programming]
 time: 15:26:46
 ---
 
+{% excerpt %}
+
 I read a wonderful post, [3 Things I hate about “beginner” programming books][beginner], which I couldn't agree more with. Basically he has these points:
 
 1. Too long
@@ -13,6 +15,8 @@ I read a wonderful post, [3 Things I hate about “beginner” programming books
 3. No answers to exercises.
 
 Nr 1 is a pretty curious one. Even though I think a book is good, I often end up only completing 75-85% of it before going on with my own projects or with something else. Also the best books are often shorter than your average 700+ pages brick. [Modern Perl][], [The Pragmatic Programmer][] and [Effective C++][] are all short but really good.
+
+{% endexcerpt %}
 
 I always hate, really hate, when I can't find an answer to an exercise in a book. Often I'm unsure or I frankly don't know how to solve something, even after reading the text and examples, and I also think I learn best by copying. This may sound strange to you but I swear it's true. When I made my first game I copied from a tutorial and after I changed and wrote something new. This is also the same when doing math, first I want too see examples and how to actually solve something then I copy that and then I go "hmm what does this do, what will happen here".
 

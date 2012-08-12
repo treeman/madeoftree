@@ -11,7 +11,11 @@
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     </header>
 
-    <div class="truncated">{{ post.content | strip_html | truncatewords: 75 }}</div>
+    {% if post.excerpt %}
+        <div class="truncated">{{ post.excerpt | markdownify }}</div>
+    {% else %}
+        <div class="truncated">{{ post.content | strip_html | truncatewords: 75 }}</div>
+    {% endif %}
 
     <div class="read_more"><a href="{{ post.url }}">Read more...</a></div>
   </article>

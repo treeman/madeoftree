@@ -5,7 +5,12 @@ category: Motivation
 tags: Motivation,School,Courses
 time: 08:56:05
 ---
+
+{% excerpt %}
+
 It's funny how motivation can play such a huge role with my productivity. I'm currently having two math courses; one mandatory about analysis in multiple variables and vector analysis and one voluntary about advanced linear algebra. I don't like the analysis course, didn't like the previous ones and I don't like this one.I don't fall asleep on lectures ever and I always try my best to listen but this one is pretty horrible. Not sure if the teacher or the content is to blame?
+
+{% endexcerpt %}
 
 On the other hand the linear algebra course is fun and intriguing. Every lecture I'm always surprised when it ends "already 2 hours?". This is so funny because I'm not really convinced why this is happening, are the courses or the teachers that different? Sure that's probably true, but mostly I think it's my motivation that's hurting me.
 

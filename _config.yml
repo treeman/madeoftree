@@ -1,4 +1,6 @@
 
+auto: true
+server: true
 paginate: 10
 pygments: true
 permalink: /blog/:year/:month/:day/:title

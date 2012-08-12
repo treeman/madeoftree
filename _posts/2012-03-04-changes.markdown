@@ -6,7 +6,11 @@ tags: [Life, Changes]
 time: 20:21:17
 ---
 
+{% excerpt %}
+
 A lot has been going on lately and it feels like I'm being swamped. I can't complain too much but there are things I'd like to change after the exam period this week.
+
+{% endexcerpt %}
 
 1. Program more!  
 I have seriously done *nothing* since christmas or someting. I need to finish:  
