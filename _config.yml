@@ -1,10 +1,9 @@
 
-auto: true
-server: true
-paginate: 10
+auto: false
+server: false
 pygments: true
 permalink: /blog/:year/:month/:day/:title
-exclude: ["Rakefile", "TODO", "CNAME"]
+exclude: ["site", "README.md", "CNAME"]
 title: Madeoftree
 url: http://madeoftree.se
 

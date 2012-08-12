@@ -18,6 +18,11 @@ Sitemap
 TODO
 ====
 
+* Move from github pages to amazon s3 storage
+    * Rename github repo
+    * Create amazon bucket from Ireland
+    * Reroute domain names
+
 * Implement urls:
 
     /blog/:year
@@ -34,19 +39,28 @@ TODO
     /wiki
     /wiki/*name
 
+* Reset games and files dir structure as we're going to use aws anyway. Will just work!!!
+
+    /games/sat-e/index.markdown
+    /games/sat-e/download/Linux_64bit-Sat-E_v1.0.tar
+    /games/sat-e/download/Windows-Sat-E_v1.0.zip
+    /games/sat-e/screenshot/Alone.png
+    /games/sat-e/screenshot/Docking_Station.png
+    /games/sat-e/screenshot/Lots_Of_Stuff.png
+
+* Add in custom game files content
+* Add in custom game screens content
+
 * Fix images
-    There are some direct to http://madeoftree.net/...
-    Others exist on aws storage.
+    * There are some direct to http://madeoftree.net/...
+    * Take back /media/:images
 
 * Remove the use of `<center>`! Deprecated since html 4.x or something...
     Replace with `<div class="center">...</div>`
 
-* Write custom summaries for latest posts
-
 * 301 redirects... How to handle?
-    Break?!? =(
+    Don't care?! :(
 
-
-* Replace Rakefile with a script made in perl, easier for me to modify.
-    * aws automatic uploading through script
+* Script
+    * Edit wiki
 

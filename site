@@ -1,0 +1,128 @@
+#!/usr/bin/env perl
+
+use autodie;
+use Modern::Perl;
+use Getopt::Long;
+use Data::Dumper;
+use File::Basename;
+use POSIX qw/strftime/;
+
+# Set website url
+my $url = "www.madeoftree.se"
+# Custom domain must have the same name as bucket
+my $bucket = "s3://$url";
+
+# Fetch path to current directory
+my $dir = dirname(__FILE__);
+
+# Fetch command line options
+my $help;
+my $debug;
+
+my $sync;
+my $host;
+
+my $new;
+my $edit;
+my $wiki;
+
+GetOptions(
+    'help|h' => \$help,
+    'debug' => \$debug,
+
+    'sync' => \$sync,
+    'host' => \$host,
+
+    'new' => \$new,
+    'edit' => \$edit,
+);
+
+sub what_file {
+    die "No title given" unless scalar @ARGV;
+
+    my $now = strftime ('%F', gmtime);
+
+    my $clean_title = lc (join ' ', @ARGV);
+    $clean_title =~ s/\s/_/g;
+    $clean_title =~ s/[^\w\d]//g;
+
+    return "$dir/_posts/$now-$clean_title.markdown";
+}
+
+sub help {
+    say "Easy site script.";
+    say "";
+    say "   --sync";
+    say "       Sync site from beneath _site.";
+    say "   --host";
+    say "       Host with jekyll server.";
+    say "   --new [post title]";
+    say "       Start writing a new post.";
+    say "   --edit [post title]";
+    say "       Edit a post.";
+    say "   --wiki"
+    say "       Edit file in wiki.";
+    say "";
+
+    exit;
+}
+
+if ($help) {
+    help();
+}
+elsif ($edit) {
+    my $file = what_file();
+
+    say "File '$file'" if $debug;
+
+    die "Can't read file: '$file'" unless -r $file;
+
+    exec "vim $file";
+}
+elsif ($new) {
+    my $file = what_file();
+
+    say "File '$file'" if $debug;
+
+    die "File exists: '$file'" if -r $file;
+
+    open my $fh, '>:encoding(UTF-8)', $file;
+
+    say $fh "---";
+    say $fh "layout: post";
+    say $fh "title: " . join (' ', @ARGV);
+    say $fh "date: " . strftime ('%F %T', gmtime);
+    say $fh "category: ";
+    say $fh "tags: ";
+    say $fh "---";
+    say $fh "";
+    say $fh "";
+
+    close $fh;
+
+    exec "vim $file";
+}
+elsif ($host) {
+    say "Running jekyll server";
+    say "url: http://0.0.0.0:4000/";
+
+    exec "jekyll --server --auto --url $url $dir/ $dir/_site";
+}
+elsif ($sync) {
+    say "Building site...";
+
+    `jekyll --url $url`;
+
+    say "Syncing...";
+
+    if ($debug) {
+         `s3cmd sync --dry-run --acl-public --guess-mime-type --delete-removed ./_site/ s3://$bucket`;
+    }
+    else {
+        `s3cmd sync --acl-public --guess-mime-type --delete-removed $dir/_site/ s3://$bucket`;
+    }
+}
+else {
+    help();
+}
+
