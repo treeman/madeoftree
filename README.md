@@ -19,7 +19,6 @@ TODO
 ====
 
 * Move from github pages to amazon s3 storage
-    * Rename github repo
     * Reroute domain names
 
 * Implement urls:
