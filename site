@@ -8,9 +8,9 @@ use File::Basename;
 use POSIX qw/strftime/;
 
 # Set website url
-my $url = "www.madeoftree.se"
+my $url = "www.madeoftree.se";
 # Custom domain must have the same name as bucket
-my $bucket = "s3://$url";
+my $bucket = $url;
 
 # Fetch path to current directory
 my $dir = dirname(__FILE__);
@@ -60,7 +60,7 @@ sub help {
     say "       Start writing a new post.";
     say "   --edit [post title]";
     say "       Edit a post.";
-    say "   --wiki"
+    say "   --wiki";
     say "       Edit file in wiki.";
     say "";
 
