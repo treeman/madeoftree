@@ -20,7 +20,6 @@ TODO
 
 * Move from github pages to amazon s3 storage
     * Rename github repo
-    * Create amazon bucket from Ireland
     * Reroute domain names
 
 * Implement urls:
