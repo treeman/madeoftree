@@ -5,10 +5,10 @@ category: Postmortems
 tags: Postmortems,7days
 time: 21:01:52
 ---
-Good times, good times. [MenuCity](http://madeoftree.net/blog/MenuCity/) has been out a while and thanks for all the positive and constructive feedback guys, it's like my food doing this (programming is my air and the fun is the water... err). Anyway here's the postmortem of my latest, and greatest, game.
+Good times, good times. [MenuCity](/blog/MenuCity/) has been out a while and thanks for all the positive and constructive feedback guys, it's like my food doing this (programming is my air and the fun is the water... err). Anyway here's the postmortem of my latest, and greatest, game.
 
 Let's start with a hideous graph:
-![](http://madeoftree.net/media/images/menucitygraph.png)
+![](/media/images/menucitygraph.png)
 God it's ugly, but it works I guess. I spent about 32 hours on this game which is the most I've spent on an experimental game so far. The bulk of the game was actually done really, really quickly like the second day or so. All the gameplay was there and with pacemaker art too! The last 5 days of production was focused on polish, level design and art.
 
 **Art**
@@ -28,7 +28,7 @@ This is good I'd say! But meh - we all like cool stuff, I mean it's *cool!* But 
 **The Game itself**
 
 Ahh the game... This one is my very best; it looks as good as *Bugger*, it's more addictive than *Balls* and it's even criminal to compare the levels to those of *Black and White*! So what could be better? There are a few things:
-+   Horrible tutorial. I tried to redeem myself [here](http://madeoftree.net/blog/MenuCity:_Level_0_Walkthrough/) but still.
++   Horrible tutorial. I tried to redeem myself [here](/blog/MenuCity:_Level_0_Walkthrough/) but still.
 
 +   Be able to move the camera for an overview of terrain. This I had planned, but I had other more important things to do and then I sorta forgot about it...
 

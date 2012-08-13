@@ -5,7 +5,7 @@ category: Timelapse
 tags: Timelapse,Ludum Dare,Games
 time: 20:13:37
 ---
-Here's the timelapse for my entry to [Ludum Dare 22](http://www.ludumdare.com/compo/), [Sat-E](http://madeoftree.net/blog/sate).
+Here's the timelapse for my entry to [Ludum Dare 22](http://www.ludumdare.com/compo/), [Sat-E](/blog/sate).
 
 http://www.youtube.com/watch?v=eoKDyhxCVm0
 

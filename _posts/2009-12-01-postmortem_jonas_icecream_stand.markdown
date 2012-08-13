@@ -5,10 +5,10 @@ category: Postmortems
 tags: Postmortems,7days
 time: 15:03:04
 ---
-Ah my latest game [Jonas IceCream Stand](http://madeoftree.net/blog/jonas_icecream_stand) is finished and up and running and I'm really proud of it! And thanks for the feedback guys, it's always welcome.
+Ah my latest game [Jonas IceCream Stand](/blog/jonas_icecream_stand) is finished and up and running and I'm really proud of it! And thanks for the feedback guys, it's always welcome.
 
 I spent almost exactly fifty hours on this game and that's by far the most I've spent on a 7day project. To be honest it's probably more but I'm not really good at logging all the hours...   
-![](http://madeoftree.net/media/images/icecreamgraph.png)
+![](/media/images/icecreamgraph.png)
 
 ##A Race   
 This game was a race against time from start to finish. I understood right from the beginning this wouldn't be easy. Creating a whole GUI from scratch, composing animation and a focus on graphics(!). I've never done a GUI, it would be really easy with a decent framework for it... But I don't have one for it so all the GUI code is *really* messy and hard to maintain.
@@ -21,7 +21,7 @@ I keep saying it again and again but I'm not a graphics designer but I should st
 The fading effect on the sky was pretty cool, but it's kinda crude and it doesn't fit the overall theme very well. The theme has a few distinct colors with a little "childish" feel to them. I feel the fading adds a bit too many colors to it. But I do think the end points (in the middle of the night with all the stars and when it's as light as possible) looks pretty good. And I'm not sure it was a very good idea to include a MenuCity silhouette in the background.
 
 <center>
-  <img src="http://madeoftree.net/media/images/bugger-time-spent.png" /><br />
+  <img src="/media/images/bugger-time-spent.png" /><br />
   <em>A beautiful night sky.</em>
 </center>
 

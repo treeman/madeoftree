@@ -18,33 +18,33 @@ module Liquid
             depth_first(doc.children.first) do |node|
 
                 if !deleting && node.class == Nokogiri::XML::Text
-                current_length += node.text.length
+                    current_length += node.text.length
                 end
 
                 if deleting
-                to_delete << node
+                    to_delete << node
                 end
 
                 if !deleting && current_length > max_length
-                deleting = true
+                    deleting = true
 
-                # Will cut off words
-                #trim_to_length = current_length - max_length + 1
-                #node.content = node.text[0..trim_to_length] + continuation_string
+                    # Will cut off words
+                    #trim_to_length = current_length - max_length + 1
+                    #node.content = node.text[0..trim_to_length] + continuation_string
 
-                # Don't cut off words etc
-                node.content = node.text + continuation_string
+                    # Don't cut off words etc
+                    node.content = node.text + continuation_string
                 end
             end
 
             to_delete.map(&:remove)
 
             doc.inner_html
-            end
+        end
 
-        private
+      private
 
-            def depth_first(root, &block)
+        def depth_first(root, &block)
             parent = root.parent
             sibling = root.next
             first_child = root.children.first
@@ -55,7 +55,7 @@ module Liquid
                 depth_first(first_child, &block)
             else
                 if sibling
-                depth_first(sibling, &block)
+                    depth_first(sibling, &block)
                 else
                 # back up to the next sibling
                 n = parent
@@ -67,9 +67,10 @@ module Liquid
                 if n && n.next
                     depth_first(n.next, &block)
                 end
-                end
             end
         end
+
+      end
     end
 end
 

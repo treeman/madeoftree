@@ -5,7 +5,7 @@ category: Declaration of War
 tags: Games,Ludum Dare
 time: 09:25:31
 ---
-The time has finally come. After more than three hours of exam writing, and almost double spent on studying for it, I am now ready to declare my entry into [Ludum Dare 22](http://www.ludumdare.com/compo/)! I've been away far too long, with my entries for the [17th](http://madeoftree.net/blog/beebop_the_island_hopper) and the [20th](http://madeoftree.net/blog/my_minions) dare being almost a century away, the ancient game making creature will once again move into action. We'll just hope the game won't be ancient as well...
+The time has finally come. After more than three hours of exam writing, and almost double spent on studying for it, I am now ready to declare my entry into [Ludum Dare 22](http://www.ludumdare.com/compo/)! I've been away far too long, with my entries for the [17th](/blog/beebop_the_island_hopper) and the [20th](/blog/my_minions) dare being almost a century away, the ancient game making creature will once again move into action. We'll just hope the game won't be ancient as well...
 
 Leaving that behind us I can now focus on what to actually *use*. I wanted to try some new language and some new environment but that seems lika a really bad idea. So I will stick to what I know:
 
@@ -17,6 +17,6 @@ And finally my little [timelapse recording hack](https://github.com/treeman/Tree
 
 And of course here's where I'll be spending most of my waking hours:
 
-![Ludum Dare 22 setup](http://madeoftree.net/media/images/LD_setup.JPG)
+![Ludum Dare 22 setup](/media/images/LD_setup.JPG)
 I'm planning on getting some new food during all this, but I'm not entirely sure yet.
 

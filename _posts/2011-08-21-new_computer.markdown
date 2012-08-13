@@ -5,7 +5,7 @@ category: Computer
 tags: General,Computer
 time: 13:23:41
 ---
-I briefly mentioned my new computer in [the last post](http://madeoftree.net/blog/resurrection) and I thought I'd make a post about it, as it's awesome (as all new computers are).
+I briefly mentioned my new computer in [the last post](/blog/resurrection) and I thought I'd make a post about it, as it's awesome (as all new computers are).
 
 Firstly, the specs:
 

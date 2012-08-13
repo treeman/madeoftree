@@ -5,7 +5,7 @@ category: Computer
 tags: General,Computer
 time: 14:01:27
 ---
-So I physically built [the computer](http://madeoftree.net/blog/new_computer) and now I've been using it a while, configuring stuff and getting used to my new screens. I think they're about three times wide as my old laptop and now I have this one huge vertical space which is absolutely wonderful for surfing forums and reading code. Damn I love coding on it! When I go back to the laptop I feel cramped..
+So I physically built [the computer](/blog/new_computer) and now I've been using it a while, configuring stuff and getting used to my new screens. I think they're about three times wide as my old laptop and now I have this one huge vertical space which is absolutely wonderful for surfing forums and reading code. Damn I love coding on it! When I go back to the laptop I feel cramped..
 
 And while we're at dissing the old - I can never ever like another keyboard again! Well, at least not another rubber dome or scissor switch one.
 
@@ -24,8 +24,8 @@ Back to my screen setup again - yes everything with my new computer is either th
 I set up a nice looking statusbar and some stuff on the desktop with [conky](http://conky.sourceforge.net/). I've been wanting to set up a todo list and while I was at it I put up my assignment due dates and my schedule too. And never forget the ever so important manga updates!
 
 <center>
-  <a href="http://madeoftree.net/media/images/xmonad-left.png" ><img src="http://madeoftree.net/media/images/xmonad-left.png" width="180" /></a>
-  <a href="http://madeoftree.net/media/images/xmonad-right.png" ><img src="http://madeoftree.net/media/images/xmonad-right.png" width="400" /></a><br />
+  <a href="/media/images/xmonad-left.png" ><img src="/media/images/xmonad-left.png" width="180" /></a>
+  <a href="/media/images/xmonad-right.png" ><img src="/media/images/xmonad-right.png" width="400" /></a><br />
   <em>My dual screen setup, click to enlarge</em>
 </center>
 
