@@ -9,6 +9,14 @@ module Liquid
             text.slugize
         end
 
+        def link_category(category)
+            "#{@context.registers[:site].config['category_dir']}/#{category.slugize}"
+        end
+
+        def link_tag(tag)
+            "#{@context.registers[:site].config['tag_dir']}/#{tag.slugize}"
+        end
+
         def length(obj)
             obj.length if obj.respond_to? :length
         end

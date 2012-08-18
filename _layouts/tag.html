@@ -2,5 +2,6 @@
 layout: default
 ---
 
-Tag?
+{% assign posts = site.tags[page.tag] %}
+{% include short_posts.html %}
 

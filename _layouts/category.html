@@ -2,5 +2,6 @@
 layout: default
 ---
 
-Cat?
+{% assign posts = site.categories[page.category] %}
+{% include short_posts.html %}
 

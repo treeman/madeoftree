@@ -10,6 +10,8 @@ TODO
 * Reroute domain names
     Not possible to direct to bucket directly...
 
+* Fix highlighting + markdown for category/tag page
+
 * Implement urls:
 
     /blog/:year

@@ -6,4 +6,6 @@ permalink: /blog/:year/:month/:day/:title
 exclude: ["site", "README.md", "CNAME"]
 title: Madeoftree
 url: http://madeoftree.se
+category_dir: '/blog/categories'
+tag_dir: '/blog/tags'
 
