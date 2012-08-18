@@ -14,12 +14,16 @@ Sitemap
     /blog/:year/:month/:day/:title
     /archive
     /404
+    /wiki
+    /wiki/*name
 
 TODO
 ====
 
-* Move from github pages to amazon s3 storage
-    * Reroute domain names
+* Design!
+
+* Reroute domain names
+    Not possible to direct to bucket directly...
 
 * Implement urls:
 
@@ -34,8 +38,6 @@ TODO
     /games
     /games/:title
     /quotes
-    /wiki
-    /wiki/*name
 
 * Reset games and files dir structure as we're going to use aws anyway. Will just work!!!
 
@@ -49,16 +51,9 @@ TODO
 * Add in custom game files content
 * Add in custom game screens content
 
-* Fix images
-    * There are some direct to http://madeoftree.net/...
-    * Take back /media/:images
-
 * Remove the use of `<center>`! Deprecated since html 4.x or something...
     Replace with `<div class="center">...</div>`
 
 * 301 redirects... How to handle?
     Don't care?! :(
-
-* Script
-    * Edit wiki
 

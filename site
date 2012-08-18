@@ -6,6 +6,7 @@ use Getopt::Long;
 use Data::Dumper;
 use File::Basename;
 use POSIX qw/strftime/;
+use File::Path qw(make_path);
 
 # Set website url
 my $url = "www.madeoftree.se";
@@ -35,18 +36,38 @@ GetOptions(
 
     'new' => \$new,
     'edit' => \$edit,
+
+    'wiki' => \$wiki,
 );
 
-sub what_file {
-    die "No title given" unless scalar @ARGV;
-
-    my $now = strftime ('%F', gmtime);
-
+sub get_clean_title {
     my $clean_title = lc (join ' ', @ARGV);
     $clean_title =~ s/\s/_/g;
     $clean_title =~ s/[^\w\d]//g;
 
+    return $clean_title;
+}
+
+sub what_post_file {
+    die "No title given" unless scalar @ARGV;
+
+    my $now = strftime ('%F', gmtime);
+    my $clean_title = get_clean_title ();
+
     return "$dir/_posts/$now-$clean_title.markdown";
+}
+
+# Generate a directory tree for files
+sub make_dir_tree
+{
+    my ($file) = @_;
+
+    # Remove file basename
+    my @dirs = split '/', $file;
+    my $base = pop @dirs;
+    my $dir = join ('/', @dirs);
+
+    make_path($dir);
 }
 
 sub help {
@@ -70,8 +91,35 @@ sub help {
 if ($help) {
     help();
 }
+elsif ($wiki) {
+    die "No name given" unless scalar @ARGV;
+
+    my $title = join ' ', @ARGV;
+    my $clean_title = lc ($title);
+    $clean_title =~ s/\s/_/g;
+    $clean_title =~ s|[^\w\d/]||g;
+
+    my $file = "$dir/wiki/$clean_title/index.markdown";
+
+    unless (-r $file) {
+        make_dir_tree ($file);
+
+        open my $fh, '>:encoding(UTF-8)', $file;
+
+        say $fh "---";
+        say $fh "layout: wiki";
+        say $fh "title: " . join (' ', @ARGV);
+        say $fh "---";
+        say $fh "";
+        say $fh "";
+
+        close $fh;
+    }
+
+    exec "vim $file";
+}
 elsif ($edit) {
-    my $file = what_file();
+    my $file = what_post_file();
 
     say "File '$file'" if $debug;
 
@@ -80,7 +128,7 @@ elsif ($edit) {
     exec "vim $file";
 }
 elsif ($new) {
-    my $file = what_file();
+    my $file = what_post_file();
 
     say "File '$file'" if $debug;
 
