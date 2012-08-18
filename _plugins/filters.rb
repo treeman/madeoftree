@@ -5,6 +5,14 @@ require 'nokogiri'
 module Liquid
     module StandardFilters
 
+        def slugize(text)
+            text.slugize
+        end
+
+        def length(obj)
+            obj.length if obj.respond_to? :length
+        end
+
         def uri_escape(input)
             URI.escape(input)
         end

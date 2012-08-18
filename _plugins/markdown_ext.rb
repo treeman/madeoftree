@@ -1,4 +1,5 @@
 module Jekyll
+
     class MarkdownConverter
         alias :old_convert :convert
 
@@ -18,5 +19,6 @@ module Jekyll
 
         end
     end
+
 end
 
