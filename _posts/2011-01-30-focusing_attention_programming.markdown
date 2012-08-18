@@ -2,7 +2,7 @@
 layout: post
 title: "Focusing Attention: Programming"
 category: Attention
-tags: [Attention,Programming]
+tags: [Attention, Programming]
 time: 20:33:44
 ---
 These last two weeks have been a small attempt at clearing up my head a bit. I have far too many things I'd like to do and even if it's not possible to do them all at once it didn't stop me from thinking of them. One minute it's that and the other it's something completely different. This is really not good as it messes with the [top idea](/blog/the_top_idea) a lot so I decided to do something about it. By focusing on [one single thing each week](/blog/category/attention) I've been trying to remedy the situation.

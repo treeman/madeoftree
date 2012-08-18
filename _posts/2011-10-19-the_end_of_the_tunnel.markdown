@@ -2,7 +2,7 @@
 layout: post
 title: "The End of the Tunnel"
 category: General
-tags: [General,Status]
+tags: [General, Status]
 time: 21:18:24
 ---
 Lately I've been feeling like there's been a shit-ton of stuff going on, quite a turn-around from the [last time](/blog/being_productive).

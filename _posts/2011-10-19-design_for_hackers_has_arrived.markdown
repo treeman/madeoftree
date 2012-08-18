@@ -2,7 +2,7 @@
 layout: post
 title: "Design for Hackers has arrived!"
 category: Books
-tags: [General,Design,Books,New stuff]
+tags: [General, Design, Books, New stuff]
 time: 21:25:57
 ---
 <center><img src="http://www.designforhackers.com/img/book-image.jpg" /></center>

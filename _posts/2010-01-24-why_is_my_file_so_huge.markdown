@@ -2,7 +2,7 @@
 layout: post
 title: "Why is my file so huge?"
 category: Game Making
-tags: [Random,Games]
+tags: [Random, Games]
 time: 17:39:55
 ---
 My latest game was absolutely huge! And I'm not talking about the music (which was pretty huge too - roughly 20mb) but the little .exe file.

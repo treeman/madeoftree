@@ -2,7 +2,7 @@
 layout: post
 title: "Widening the horizon"
 category: Game Making
-tags: [General,Meta]
+tags: [General, Meta]
 time: 16:15:16
 ---
 This is a game making site but where are the games? What gives?

@@ -2,7 +2,7 @@
 layout: post
 title: "A Four-Eyed Update"
 category: General
-tags: [General,Glasses]
+tags: [General, Glasses]
 time: 12:25:58
 ---
 Wow it's been a while! Almost a month and a half since my [last update](/blog/a_week_of_headache). There I complained about my almost constant headaches which hampered me a lot actually. Luckily now I have joined the rank of cool.

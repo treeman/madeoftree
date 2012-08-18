@@ -2,7 +2,7 @@
 layout: post
 title: "Resurrection"
 category: General
-tags: [General,Summer Break]
+tags: [General, Summer Break]
 time: 16:28:50
 ---
 Aah what a nice summer!

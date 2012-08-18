@@ -2,7 +2,7 @@
 layout: post
 title: "Postmortem: Jonas IceCream Stand"
 category: Postmortems
-tags: [Postmortems,7days]
+tags: [Postmortems, 7days]
 time: 15:03:04
 ---
 Ah my latest game [Jonas IceCream Stand](/blog/jonas_icecream_stand) is finished and up and running and I'm really proud of it! And thanks for the feedback guys, it's always welcome.

@@ -2,7 +2,7 @@
 layout: post
 title: "Postmortem: Bugger"
 category: Postmortems
-tags: [Postmortems,7days]
+tags: [Postmortems, 7days]
 ---
 
 It's time for the follow up on my latest game [Bugger](/blog/Bugger/).

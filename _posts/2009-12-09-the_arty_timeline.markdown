@@ -2,7 +2,7 @@
 layout: post
 title: "The Arty Timeline"
 category: Timeline
-tags: [7days,Timeline]
+tags: [7days, Timeline]
 ---
 
 While working on [Jonas IceCream Stand](/blog/postmortem_jonas_icecream_stand) I took a screenshot every day and I thought they looked pretty cool so here they are:
