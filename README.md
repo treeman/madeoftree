@@ -7,9 +7,6 @@ TODO
 
 * Design!
 
-* Reroute domain names
-    Not possible to direct to bucket directly...
-
 * Fix highlighting + markdown for category/tag page
 
 * Implement urls:
@@ -17,10 +14,6 @@ TODO
     /blog/:year
     /blog/:year/:month
     /blog/:year/:month/:day
-    /blog/:category
-    /blog/:tags
-    /blog/categories ?
-    /blog/tags ?
     /sitemap
     /quotes
 
@@ -34,6 +27,17 @@ TODO
     /blog/ludum_dare_22_timelapse -> /blog/2011/12/19/ludum_dare_22_timelapse
     etc...
     A *lot* of links. Make script.
+
+* Automatic project page generation from repositories
+    Maybe use jekyll-plugins for automatic generation of it? Need to update README and clean up repos.
+
+    Custom main page for projects though!
+
+* Need license file though
+
+* Reroute domain names
+    Not possible to direct to bucket directly...
+    Possible with amazon service (cost 0.1$/month...)
 
 * 301 redirects... How to handle?
     Don't care?! :(
@@ -50,6 +54,10 @@ Sitemap
     /books
     /blog
     /blog/:year/:month/:day/:title
+    /blog/categories
+    /blog/tags
+    /blog/categories/:category
+    /blog/tags/:tags
     /archive
     /404
     /wiki
