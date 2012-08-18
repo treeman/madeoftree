@@ -2,7 +2,7 @@
 layout: post
 title: "Evolution of RTS games"
 category: Game Design Course
-tags: Game Design
+tags: [Game Design]
 time: 10:00:40
 ---
 <a name="top"></a>

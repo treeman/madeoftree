@@ -2,7 +2,7 @@
 layout: post
 title: "The Top Idea"
 category: Productivity
-tags: General,Productivity,Rants
+tags: [General,Productivity,Rants]
 time: 10:05:25
 ---
 Recently I've been having a dozen ideas and projects I've been poking around with:

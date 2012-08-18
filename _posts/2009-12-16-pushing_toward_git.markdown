@@ -2,7 +2,7 @@
 layout: post
 title: "Pushing toward Git"
 category: News
-tags: News
+tags: [News]
 time: 20:02:17
 ---
 The time has come; it's time for me to move my source out in the open for the first time.   
