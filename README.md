@@ -11,11 +11,11 @@ TODO
 
 * Implement urls:
 
-    /blog/:year
-    /blog/:year/:month
-    /blog/:year/:month/:day
-    /sitemap
-    /quotes
+        /blog/:year
+        /blog/:year/:month
+        /blog/:year/:month/:day
+        /sitemap + sitemap.xml
+        /quotes
 
 * Add in custom game files content
 * Add in custom game screens content
@@ -27,13 +27,6 @@ TODO
     /blog/ludum_dare_22_timelapse -> /blog/2011/12/19/ludum_dare_22_timelapse
     etc...
     A *lot* of links. Make script.
-
-* Automatic project page generation from repositories
-    Maybe use jekyll-plugins for automatic generation of it? Need to update README and clean up repos.
-
-    Custom main page for projects though!
-
-* Need license file though
 
 * Reroute domain names
     Not possible to direct to bucket directly...
@@ -77,7 +70,8 @@ Sitemap
 References
 ----------
 
-Some plugin stuff modified from [here][black].
+Some plugin stuff modified from [here][black] and [here][jp].
 
 [black]: http://github.com/BlackBulletIV/blackbulletiv.github.com
+[jp]: http://recursive-design.com/projects/jekyll-plugins/
 
