@@ -81,6 +81,9 @@ module Jekyll
 
       self.data = load_config(base_dir, project_config_path)
 
+      # Add in url for linkage in layouts
+      self.data['url'] = "/#{project_dir}"
+
       # Ignore the project unless it has been marked as published.
       unless self.data['published']
         return false
@@ -96,6 +99,7 @@ module Jekyll
 
       # Get the version if possible.
       version = get_version(repo_dir)
+      self.data['version'] = version if version
 
       # Create the .zip file.
       self.data['download_link'] = create_zip(repo_dir, zip_name, project_dir, version)
@@ -114,6 +118,11 @@ module Jekyll
 
       # Replace github-style '``` lang' code markup to pygments-compatible.
       self.content = self.content.gsub(/```([ ]?[a-z0-9]+)?(.*?)```/m, '{% highlight \1 %}\2{% endhighlight %}')
+
+      self.data['content'] = self.content
+
+      # Save project info
+      site.projects << self.data
 
       @name = "index#{ext}"
       self.process(@name)
@@ -248,8 +257,17 @@ module Jekyll
     # Folder containing project .yml files.
     PROJECT_FOLDER = '_projects'
 
+    @@projects = []
+
+    def projects
+        @@projects
+    end
+
     # Loops through the list of project pages and processes each one.
     def write_project_indexes
+      # Prevent overflow when chaning files in server
+      @@projects = []
+
       base_dir = self.config['project_dir'] || 'projects'
       projects = self.get_project_files
       projects.each do |project_config_path|
@@ -272,6 +290,12 @@ module Jekyll
         # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
         self.static_files << Jekyll::StaticProjectFile.new(self, self.dest, project_dir, 'index.html')
       end
+    end
+
+    # Write projects page
+    def write_projects_index
+        dir = self.config['project_dir'] || 'projects'
+        write_page MainProject.new(self, self.source, dir)
     end
 
     # Gets a list of files in the _projects folder with a .yml extension.
@@ -300,6 +324,16 @@ module Jekyll
   end
 
 
+  # Generate main project
+  class MainProject < CustomPage
+    def initialize(site, base, dir)
+      super site, base, dir, 'projects'
+
+      self.data['projects'] = site.projects.sort_by{ |h| h["title"] }
+    end
+  end
+
+
   # Jekyll hook - the generate method is called by jekyll, and generates all the project pages.
   class GenerateProjects < Generator
     safe true
@@ -307,6 +341,7 @@ module Jekyll
 
     def generate(site)
       site.write_project_indexes
+      site.write_projects_index
     end
 
   end

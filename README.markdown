@@ -2,7 +2,9 @@
 New Site!
 =========
 
-This is my new site made in Jekyll.
+This is my new website made in [Jekyll][] which is a static site generator.
+
+[Jekyll]: http://jekyllrb.com/
 
 Sitemap
 -------

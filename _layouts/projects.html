@@ -1,0 +1,17 @@
+---
+layout: default
+title: Projects
+---
+
+{% for project in page.projects %}
+  <article>
+    <header>
+      <h1>{{ project.title }}</h1>
+      <h2>$ git clone {{ project.repository }}</h2>
+    </header>
+
+    {{ project.description || markdownify }}
+
+  </article>
+{% endfor %}
+

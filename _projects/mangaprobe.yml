@@ -1,5 +1,7 @@
 layout: project
 title: Mangaprobe
 repository: git://github.com/treeman/Mangaprobe.git
-published: true
+published: false
+description: |
+    A simple script which tracks the latest release of mangas from various sites.
 

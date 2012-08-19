@@ -1,5 +1,9 @@
 layout: project
 title: This Website
 repository: git://github.com/treeman/madeoftree.git
-published: true
+published: false
+description: |
+    This website is a static one made with [Jekyll][].
+
+    [Jekyll]: http://jekyllrb.com/
 
