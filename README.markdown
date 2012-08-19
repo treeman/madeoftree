@@ -39,6 +39,8 @@ TODO
 ----
 
 * Design!
+    * Prettier date handling, see - http://recursive-design.com/blog/
+    * Bunch up projects, see - http://recursive-design.com/projects/
 
 * Fix highlighting + markdown for category/tag page
 
@@ -60,6 +62,8 @@ TODO
     /blog/ludum_dare_22_timelapse -> /blog/2011/12/19/ludum_dare_22_timelapse  
     etc...  
     A *lot* of links. Make script.
+
+* Log script. Retrieve and store logs from s3 storage.
 
 * Reroute domain names  
     Not possible to direct to bucket directly...  
