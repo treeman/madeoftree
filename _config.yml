@@ -8,4 +8,5 @@ title: Madeoftree
 url: http://madeoftree.se
 category_dir: '/blog/categories'
 tag_dir: '/blog/tags'
+markdown: rdiscount
 

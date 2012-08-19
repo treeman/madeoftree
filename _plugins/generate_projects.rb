@@ -163,10 +163,10 @@ module Jekyll
     #
     #  +repo_dir+ is the path to the directory containing the checkout-out repository.
     #
-    # Returns String path to the readme file.
+    # Returns String path to the readme file. Readme must be in root dir!
     def get_readme_path(repo_dir)
       Find.find(repo_dir) do |file|
-        if File.basename(file) =~ /^README(\.[a-z0-9\.]+)?$/i
+        if file =~ /^#{Regexp.quote(repo_dir)}\/README(\.[a-z0-9\.]+)?$/i
           return file
         end
       end
