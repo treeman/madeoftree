@@ -2,6 +2,7 @@
 # http://recursive-design.com/projects/jekyll-plugins/
 #
 # Version: 0.1.8 (201108151628)
+# Modified stuff since then!
 #
 # Copyright (c) 2010 Dave Perrett, http://recursive-design.com/
 # Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
@@ -20,10 +21,11 @@
 # the leading '# ' characters):
 #
 # ================================== COPY BELOW THIS LINE ==================================
-# layout:     default
-# title:      Jekyll Plugins
-# repository: git://recursive-design.com/jekyll-plugins.git
-# published:  true
+# layout:      default
+# title:       Jekyll Plugins
+# repository:  git://recursive-design.com/jekyll-plugins.git
+# published:   true
+# description: Nice plugins *here*.
 # ================================== COPY ABOVE THIS LINE ==================================
 #
 # There is also an optional 'zip_folder_name' setting, in case you want the unzipped folder to be named
@@ -57,6 +59,7 @@
 # - layout: Layout to use when creating the project page.
 # - title: Project title, which can be accessed in the layout.
 # - published: Project won't be published if this is false.
+# - description: Description of project to use when generating project main page.
 
 require 'fileutils'
 require 'find'
@@ -82,7 +85,7 @@ module Jekyll
       self.data = load_config(base_dir, project_config_path)
 
       # Add in url for linkage in layouts
-      self.data['url'] = "/#{project_dir}"
+      self.data['link'] = "/#{project_dir}"
 
       # Ignore the project unless it has been marked as published.
       unless self.data['published']
