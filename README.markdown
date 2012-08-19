@@ -14,10 +14,13 @@ Sitemap
     /projects
     /books
     /blog
+    /blog/:year
+    /blog/:year/:month
+    /blog/:year/:month/:day
     /blog/:year/:month/:day/:title
     /blog/categories
-    /blog/tags
     /blog/categories/:category
+    /blog/tags
     /blog/tags/:tags
     /archive
     /404
@@ -42,13 +45,8 @@ TODO
     * Prettier date handling, see - http://recursive-design.com/blog/
     * Bunch up projects, see - http://recursive-design.com/projects/
 
-* Fix highlighting + markdown for category/tag page
-
 * Implement urls:
 
-        /blog/:year
-        /blog/:year/:month
-        /blog/:year/:month/:day
         /sitemap + sitemap.xml
         /quotes
 

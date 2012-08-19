@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<nav>
+  <h1>{{ page.title }}</h1>
+
+  <ul>
+    {% for post in page.posts %}
+      <li>
+          <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %e, %Y" }}</time>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+

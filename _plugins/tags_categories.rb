@@ -59,16 +59,5 @@ module Jekyll
         end
     end
 
-    # Bootstrap
-    class GenerateTagsCategories < Generator
-        safe true
-        priority :low
-
-        def generate(site)
-            site.write_categories
-            site.write_tags
-        end
-    end
-
 end
 
