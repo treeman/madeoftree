@@ -156,9 +156,45 @@ article nav {
     text-align: center;
 }
 
-article header h2 {
+article header time {
+    display: block;
+    float: left;
+    padding: 0.6em 1em 0 0;
+}
+
+article header time span {
+    color: #999;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+article header time span.month {
     font-size: 0.8em;
-    float: right;
+}
+article header time span.day {
+    font-size: 1.7em;
+    line-height: 0.8em;
+}
+article header time span.year {
+    font-size: 0.8em;
+}
+
+article header h1 {
+    margin: 1em 0 0;
+    padding-top: 0.5em;
+}
+
+article header .category {
+    color: #999;
+    font-size: 0.9em;
+    margin: 0.3em 0 0.5em 0;
+}
+
+article header h2 {
+    /*font-size: 0.8em;*/
+    /*float: right;*/
     /*margin-top: -0.7em;*/
 }
 

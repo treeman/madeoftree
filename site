@@ -177,7 +177,7 @@ elsif ($new) {
     exec "vim $file";
 }
 elsif ($host) {
-    build();
+    #build();
 
     say "Running jekyll server";
     say "url: http://0.0.0.0:4000/";

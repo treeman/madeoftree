@@ -73,14 +73,5 @@ module Jekyll
   end
 
 
-  # Bootstrap
-  class GenerateArchives < Generator
-
-    def generate(site)
-      site.generate_archives
-    end
-  end
-
-
 end
 
