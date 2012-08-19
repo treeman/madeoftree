@@ -6,10 +6,10 @@ module Jekyll
       self.generate
       self.render
 
-      # These must come after render if we want to have liquid templating work
-      # for tag and categories posts.
+      # These must come after render if we want to have liquid templating to work.
       self.write_categories
       self.write_tags
+      self.generate_archives
 
       self.cleanup
       self.write
