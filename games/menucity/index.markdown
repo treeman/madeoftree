@@ -19,7 +19,7 @@ Up arrow - Climb
 Down arrow - Pick up/Put down   
 f1 - Secret dev console
 
-If you're stuck this might help: [Walkthrough Level 0](/blog/menuCity_level_0_walkthrough/)
+If you're stuck this might help: [Walkthrough Level 0](/blog/2009/10/16/menucity_level_0_walkthrough/)
 
 **Credits**   
 Music: The Year Before The War - [Eric Maskol](http://ericmaskol.com/)   

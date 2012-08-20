@@ -312,7 +312,7 @@ elsif ($link) {
         }
 
         my $uglies = scalar @ugly;
-        say "\n$num ugly urls.";
+        say "\n$uglies ugly urls.";
         for my $url (@ugly) {
             say pretty ($url);
         }
