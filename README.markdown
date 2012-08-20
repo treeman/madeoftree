@@ -94,7 +94,7 @@ TODO
 
 * Reroute domain names  
     Not possible to direct to bucket directly...  
-    Possible with amazon service (cost 0.1$/month...)
+    Possible with amazon cloud front (cost 0.1$/month...)
 
 * 301 redirects... How to handle?  
     Don't care?! :(
