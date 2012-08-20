@@ -13,6 +13,8 @@ Relative path to script dir
 
 Find files recursively
 
+    use File::Find;
+
     my @all_file_names;
 
     find sub {

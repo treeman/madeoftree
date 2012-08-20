@@ -5,7 +5,7 @@ category: Postmortems
 tags: [Postmortems, 7days]
 time: 15:03:04
 ---
-Ah my latest game [Jonas IceCream Stand](/blog/jonas_icecream_stand) is finished and up and running and I'm really proud of it! And thanks for the feedback guys, it's always welcome.
+Ah my latest game [Jonas IceCream Stand](/games/jonas_icecream_stand) is finished and up and running and I'm really proud of it! And thanks for the feedback guys, it's always welcome.
 
 I spent almost exactly fifty hours on this game and that's by far the most I've spent on a 7day project. To be honest it's probably more but I'm not really good at logging all the hours...   
 ![](/media/images/icecreamgraph.png)
@@ -20,10 +20,10 @@ I keep saying it again and again but I'm not a graphics designer but I should st
 
 The fading effect on the sky was pretty cool, but it's kinda crude and it doesn't fit the overall theme very well. The theme has a few distinct colors with a little "childish" feel to them. I feel the fading adds a bit too many colors to it. But I do think the end points (in the middle of the night with all the stars and when it's as light as possible) looks pretty good. And I'm not sure it was a very good idea to include a MenuCity silhouette in the background.
 
-<center>
+<div class="center">
   <img src="/media/images/bugger-time-spent.png" /><br />
   <em>A beautiful night sky.</em>
-</center>
+</div>
 
 ##Gameplay   
 Sadly I don't think the gameplay was one of my best. Sure the first five maybe ten minutes are a blast, they almost awoke my slumbering tycoon feelings. But the game is so badly balanced, it's far too easy when you've passed a point in the game. The problem is that I balanced the game the last handful of hours on the very last day and that doesn't work, not at all. A great gameplay needs to evolve, it can't be created just there on the stop. Well that's my experience at least.

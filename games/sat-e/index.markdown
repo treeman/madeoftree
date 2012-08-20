@@ -22,7 +22,7 @@ Space/Return - Choose item in docking mode
 F1 - Developer console  
 
 **Timelapse**  
-[It's on youtube](http://www.youtube.com/watch?v=eoKDyhxCVm0) and it's embedded [here](/blog/ludum_dare_22_timelapse).
+[It's on youtube](http://www.youtube.com/watch?v=eoKDyhxCVm0) and it's embedded [here](/blog/2011/12/19/ludum_dare_22_timelapse).
 
 **Source**  
 <https://github.com/treeman/Sat-E>

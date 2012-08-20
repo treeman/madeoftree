@@ -11,7 +11,7 @@ Last year I managed school sure, but without doing anything special. Well if you
 
 This year I'd like to a bit better and it has started out fine. I haven't skipped a single lecture yet (Java doesn't count!!) and I'm not too far behind in anything and a bit ahead in others, in summary I'm doing great, heh.
 
-Aside from school though, which is almost even more important, I'm feeling good and getting things done. Our home hasn't burned down yet so that's some success right there, but I'm taking it even farther and taking care of some cooking and stuff too, of course with Veronicas help but anyway. I'm also increasing my [Taekwon-do](/blog/back_to_training) training, doing some reading and a bunch of other stuff. Programming too!
+Aside from school though, which is almost even more important, I'm feeling good and getting things done. Our home hasn't burned down yet so that's some success right there, but I'm taking it even farther and taking care of some cooking and stuff too, of course with Veronicas help but anyway. I'm also increasing my [Taekwon-do](/blog/2011/09/04/back_to_training) training, doing some reading and a bunch of other stuff. Programming too!
 
 I took the advice of [Cal Newport](http://calnewport.com/blog/) and now I actually plan my days, every day, on the morning or the night before. Here's an example:
 

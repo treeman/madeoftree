@@ -9,5 +9,5 @@ time: 13:14:35
 
 When I thought about how to describe what microprogramming is I was going to write that it's what makes a processor work. This sounds a bit off though, couldn't you do the same with physical hardware instead of another programming step inside the processor? Well turns out that's what RISC is all about. Sometimes the qualms you have when facing something new are completely justified.
 
-[I wrote]: /blog/speeding_ahead
+[I wrote]: /blog/2012/01/29/speeding_ahead
 

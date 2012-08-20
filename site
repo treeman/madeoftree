@@ -8,6 +8,8 @@ use File::Basename;
 use POSIX qw/strftime/;
 use File::Path qw(make_path);
 use File::Find;
+use threads;
+use Test::More;
 
 # Set website url
 my $url = "www.madeoftree.se";
@@ -31,6 +33,8 @@ my $edit;
 my $wiki;
 my $list_wiki;
 
+my $link;
+
 GetOptions(
     'help|h' => \$help,
     'debug' => \$debug,
@@ -45,6 +49,8 @@ GetOptions(
 
     'wiki' => \$wiki,
     'wikis' => \$list_wiki,
+
+    'link=s' => \$link,
 );
 
 sub get_clean_title {
@@ -94,6 +100,10 @@ sub help {
     say "       Write wiki page.";
     say "   --new [post title]";
     say "       Start writing a new post.";
+    say "   --link all|internal|external|unknown";
+    say "       List links currently inside _site.";
+    say "   --link test";
+    say "       Check a 200 response from all internal links.";
     say "   --edit [post title]";
     say "       Edit a post.";
     say "";
@@ -119,6 +129,51 @@ sub sync {
 
         system("s3cmd put -m text/css --acl-public $file s3://$bucket/$name 2>&1");
     }
+}
+
+sub host {
+    say "Running jekyll server";
+    say "url: http://0.0.0.0:4000/";
+
+    system ("jekyll --server --auto --url $url $dir/ $dir/_site 2>&1");
+}
+
+sub fetch_site_links {
+    my @all_file_names;
+
+    find sub {
+        return if -d;
+        push @all_file_names, $File::Find::name;
+    }, "$dir/_site/";
+
+    my %external;
+    my %internal;
+    my %unknown;
+
+    for my $path ( @all_file_names ) {
+        next unless $path =~ /\.html$/;
+
+        #say $path;
+        open my $fh, '<', $path;
+
+        my $s = do { local $/ = <$fh>; };
+
+        my @matches = $s =~ m|<a href="([^"]+)">|g;
+
+        for my $m (@matches) {
+            if ($m =~ m<^https?://|^www\.>) {
+                $external{$m} = 1;
+            }
+            elsif ($m =~ m|^/|) {
+                $internal{$m} = 1;
+            }
+            else {
+                $unknown{$m} = 1;
+            }
+        }
+    }
+
+    return \%external, \%internal, \%unknown;
 }
 
 if ($help) {
@@ -204,10 +259,7 @@ elsif ($new) {
     exec "vim $file";
 }
 elsif ($host) {
-    say "Running jekyll server";
-    say "url: http://0.0.0.0:4000/";
-
-    exec "jekyll --server --auto --url $url $dir/ $dir/_site";
+    host();
 }
 elsif ($update) {
     build();
@@ -218,6 +270,73 @@ elsif ($build) {
 }
 elsif ($sync) {
     sync();
+}
+elsif ($link) {
+    my ($ext, $int, $unk) = fetch_site_links();
+
+    if ($link eq 'test') {
+        system ("jekyll --server --auto --url $url $dir/ $dir/_site &");
+
+        # Wait for server to correct itself
+        sleep 5;
+
+        my %fails;
+        my @ugly;
+
+        for my $url (keys %$int) {
+            $url = "http://0.0.0.0:4000$url";
+            $url = "$url/" unless $url =~ m</$|index\.html$>;
+
+            push (@ugly, $url) if $url =~ /index.html$/;
+
+            my $s = `curl -I -s $url`;
+
+            if ($s =~ m|HTTP.*?\s+(\d+)|) {
+                my $code = $1;
+
+                $fails{$url} = $code unless $code == 200;
+            }
+        }
+
+        sub pretty {
+            my $url = shift;
+            $url =~ s|^http://0.0.0.0:4000||;
+            $url =~ s|/$||;
+            return $url;
+        }
+
+        my $num = scalar keys %fails;
+        say "$num fail urls.";
+        for my $url (keys %fails) {
+            say pretty ($url);
+        }
+
+        my $uglies = scalar @ugly;
+        say "\n$num ugly urls.";
+        for my $url (@ugly) {
+            say pretty ($url);
+        }
+
+        # Forcefully remove jekyll
+        `pkill jekyll`;
+    }
+    else {
+
+        if ($link eq 'internal' || $link eq 'all') {
+            say "# Internal links:\n";
+            say for sort keys %$int;
+        }
+
+        if ($link eq 'external' || $link eq 'all') {
+            say "\n# External links:\n";
+            say for sort keys %$ext;
+        }
+
+        if ($link eq 'unknown' || $link eq 'all') {
+            say "\n# Unknown links:\n";
+            say for sort keys %$unk;
+        }
+    }
 }
 else {
     help();

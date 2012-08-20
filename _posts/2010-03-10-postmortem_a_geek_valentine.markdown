@@ -9,10 +9,10 @@ Ah man the mush in my brain is finally letting go and I'm starting to feel this 
 
 Anyway let's get this going!
 
-[A Geek Valentine](/blog/a_geek_valentine) isn't a good game by any means, it's really nothing special. The gameplay sucked really bad. It's kinda funny as I told Sundb00m this would be my greatest game gameplay wise. *Yeah right..*
+[A Geek Valentine](/games/a_geek_valentine) isn't a good game by any means, it's really nothing special. The gameplay sucked really bad. It's kinda funny as I told Sundb00m this would be my greatest game gameplay wise. *Yeah right..*
 
 ##Hard Work Work!   
-<center><a href="/media/images/geek_workload.png"><img src="/media/images/geek_workload.png" height="386" width="500"></a></center>
+<div class="center"><a href="/media/images/geek_workload.png"><img src="/media/images/geek_workload.png" height="386" width="500"></a></div>
 
 This is a small graph which shows how I've worked for a straight week from the 22th to the 28th. The Y-axis is hours and the X-axis is days. The labels are for either work or break and the height of the green peaks if you check it on the Y-axis is the sum of both green and red. Green is for hours where I actually worked and the red is for when I had a break. You know food, clipping toenails, reading manga and playing counter-strike.
 
@@ -30,10 +30,10 @@ About the game let's start with the positive stuff. I really like how the game l
 ##Do something you Like   
 Like with a Big L. I felt I had a really nice idea going for this one. In the end it looked and felt like a bad pacman clone but this wasn't what I had in mind *at all*. The idea was to build cool trap-combos sort of like in the *Epic Game Evil Genius*.
 
-<center>
+<div class="center">
     <img src='http://wiki.n1nj4.com/images/a/a3/Ubertrap1.jpg' /><br />
     <em>Here&#8217;s a plan for an über-trap in Evil Genius</em>
-</center>
+</div>
 
 I really love Evil Genius and especially the base building but let's face it - I failed. But the idea kept motivating me and it was really fun to try to make it happen.
 

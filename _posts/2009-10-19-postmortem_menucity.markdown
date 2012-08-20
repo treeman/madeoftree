@@ -5,7 +5,7 @@ category: Postmortems
 tags: [Postmortems, 7days]
 time: 21:01:52
 ---
-Good times, good times. [MenuCity](/blog/MenuCity/) has been out a while and thanks for all the positive and constructive feedback guys, it's like my food doing this (programming is my air and the fun is the water... err). Anyway here's the postmortem of my latest, and greatest, game.
+Good times, good times. [MenuCity](/games/menucity/) has been out a while and thanks for all the positive and constructive feedback guys, it's like my food doing this (programming is my air and the fun is the water... err). Anyway here's the postmortem of my latest, and greatest, game.
 
 Let's start with a hideous graph:
 ![](/media/images/menucitygraph.png)
@@ -28,7 +28,7 @@ This is good I'd say! But meh - we all like cool stuff, I mean it's *cool!* But 
 **The Game itself**
 
 Ahh the game... This one is my very best; it looks as good as *Bugger*, it's more addictive than *Balls* and it's even criminal to compare the levels to those of *Black and White*! So what could be better? There are a few things:
-+   Horrible tutorial. I tried to redeem myself [here](/blog/MenuCity:_Level_0_Walkthrough/) but still.
++   Horrible tutorial. I tried to redeem myself [here](/blog/2009/10/16/menucity_level_0_walkthrough/) but still.
 
 +   Be able to move the camera for an overview of terrain. This I had planned, but I had other more important things to do and then I sorta forgot about it...
 

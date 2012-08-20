@@ -11,7 +11,7 @@ It was 14,6mb!!
 
 Now every way you look at it, *that's incredibly huge*. It's like comparing an ant to a human. Normally the little ant is the exe file which should be small, except that it's not.
 
-<center><img src="http://www.kent.net/robotech/gallery/images/ant.gif" /></center>
+<div class="center"><img src="http://www.kent.net/robotech/gallery/images/ant.gif" /></div>
 
 Incredible I thought, what the heck did I do wrong? I mean my code isn't really good but I never knew it was this horrible. So today I was determined to find the cause of this obscene mutant ant.
 

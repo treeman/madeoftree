@@ -19,8 +19,8 @@ For example [Kohana][kohana], the framework this site is built on, has made me t
 
 Yeah that's what I've been doing; I've been widening my horizon and I've been having fun at the process! *Wooo*
 
-[post1]: /blog/the_experimental_games
-[post2]: /blog/no_game_this_month
+[post1]: /blog/2010/03/30/the_experimental_games
+[post2]: /blog/2010/03/25/no_game_this_month
 [ld]: http://www.ludumdare.com/
 [haskell]: http://haskell.org/
 [vim]: http://www.vim.org/

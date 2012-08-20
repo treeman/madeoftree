@@ -11,10 +11,10 @@ I saw a [post on briancarper](http://briancarper.net/blog/574/2010-in-review) wh
 ------------------------------
 1. Wrote a few games earlier this year;  
   <ul>
-    <li><a href="/blog/the_chronicles_of_bim_the_100_fake_afros">The Chronicles of Bim: The 100 Fake Afros</a></li>
-    <li><a href="/blog/a_geek_valentine">A Geek Valentine</a></li>
-    <li><a href="/blog/beebop_the_island_hopper">Beebop The Island Hopper</a></li>
-    <li><a href="/blog/wheres_teddy">Where's Teddy?</a></li>
+    <li><a href="/games/the_chronicles_of_bim_the_100_fake_afros">The Chronicles of Bim: The 100 Fake Afros</a></li>
+    <li><a href="/games/a_geek_valentine">A Geek Valentine</a></li>
+    <li><a href="/games/beebop_the_island_hopper">Beebop The Island Hopper</a></li>
+    <li><a href="/games/wheres_teddy">Where's Teddy?</a></li>
   </ul>
 2. Updated [this site](https://github.com/treeman/Made-of-Tree-site) a bit.
 3. In the process I learned a lot of PHP, Javascript, mysql and design. Fun and useful.

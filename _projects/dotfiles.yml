@@ -1,7 +1,7 @@
 layout: project
 title: dotfiles
 repository: git://github.com/treeman/dotfiles.git
-published: true
+published: false
 description: |
     Some are incomplete and unused, but others such as [.vimrc][] are more complete. I also have my [xmonad][] dual screen setup and some scripts for the desktop there.
 
