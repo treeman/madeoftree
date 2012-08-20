@@ -1,7 +1,7 @@
 layout: project
 title: Timelapse
 repository: git://github.com/treeman/Timelapse.git
-published: false
+published: true
 description: |
     Very simple fast and brutal timelapse creation tool for linux.
 

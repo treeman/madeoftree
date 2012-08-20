@@ -9,6 +9,13 @@ Redirect everything to /dev/null with:
     1>/dev/null 2>&1
 
 
+# Bash
+
+Redirect to stdout
+
+    2>&1
+
+
 # Hardware
 
 View installed ram

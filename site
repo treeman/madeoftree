@@ -7,6 +7,7 @@ use Data::Dumper;
 use File::Basename;
 use POSIX qw/strftime/;
 use File::Path qw(make_path);
+use File::Find;
 
 # Set website url
 my $url = "www.madeoftree.se";
@@ -28,6 +29,7 @@ my $host;
 my $new;
 my $edit;
 my $wiki;
+my $list_wiki;
 
 GetOptions(
     'help|h' => \$help,
@@ -42,6 +44,7 @@ GetOptions(
     'edit' => \$edit,
 
     'wiki' => \$wiki,
+    'wikis' => \$list_wiki,
 );
 
 sub get_clean_title {
@@ -85,6 +88,8 @@ sub help {
     say "       Sync site from beneath _site.";
     say "   --host";
     say "       Host with jekyll server.";
+    say "   --wikis";
+    say "       List all wiki pages.";
     say "   --wiki [page]";
     say "       Write wiki page.";
     say "   --new [post title]";
@@ -99,23 +104,43 @@ sub help {
 sub build {
     say "Building site...";
 
-    `jekyll --url $url`;
+    system("jekyll --url $url 2>&1");
 }
 
 sub sync {
     say "Syncing...";
 
-    if ($debug) {
-        exec "s3cmd sync --dry-run --acl-public --guess-mime-type --delete-removed ./_site/ s3://$bucket";
-    }
-    else {
-        exec "s3cmd sync --acl-public --guess-mime-type --delete-removed $dir/_site/ s3://$bucket";
-    }
+    # Sync _site
+    system("s3cmd sync --acl-public --guess-mime-type --delete-removed $dir/_site/ s3://$bucket 2>&1");
 
+    # Force correct filetype for css, guessing mime type doesn't appear to be working.
+    for my $file (<$dir/_site/css/*>) {
+        my ($name) = $file =~ m|_site/(.+)|;
+
+        system("s3cmd put -m text/css --acl-public $file s3://$bucket/$name 2>&1");
+    }
 }
 
 if ($help) {
     help();
+}
+elsif ($list_wiki) {
+    say "All wiki pages:\n";
+
+    my @all_file_names;
+
+    find sub {
+        return if -d;
+        push @all_file_names, $File::Find::name;
+    }, "$dir/wiki";
+
+    for my $path ( sort @all_file_names ) {
+        my ($name) = $path =~ m|wiki/(.+)/index\.[^/.]+$|;
+
+        $name = "index" unless $name;
+
+        say $name;
+    }
 }
 elsif ($wiki) {
     die "No name given" unless scalar @ARGV;
@@ -126,6 +151,8 @@ elsif ($wiki) {
     $clean_title =~ s|[^\w\d/]||g;
 
     my $file = "$dir/wiki/$clean_title/index.markdown";
+    # Main page
+    $file = "$dir/wiki/index.markdown" if $title eq 'index';
 
     unless (-r $file) {
         make_dir_tree ($file);
@@ -177,8 +204,6 @@ elsif ($new) {
     exec "vim $file";
 }
 elsif ($host) {
-    #build();
-
     say "Running jekyll server";
     say "url: http://0.0.0.0:4000/";
 

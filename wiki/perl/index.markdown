@@ -11,4 +11,16 @@ Relative path to script dir
     use File::Basename;
     my $dir = dirname(__FILE__);
 
+Find files recursively
+
+    my @all_file_names;
+
+    find sub {
+        return if -d;
+        push @all_file_names, $File::Find::name;
+    }, '/certain/directory';
+
+    for my $path ( @all_file_names ) {
+        say $path;
+    }
 
