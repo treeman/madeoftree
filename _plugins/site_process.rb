@@ -10,6 +10,7 @@ module Jekyll
       self.write_categories
       self.write_tags
       self.generate_archives
+      self.write_notfound
 
       self.cleanup
       self.write

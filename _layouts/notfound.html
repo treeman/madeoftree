@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+Ahoy!
+
+<ul>
+  {% for project in page.projects %}
+    <li>{{ project.link }}</li>
+  {% endfor %}
+</ul>
+
+{% project_list %}
+
