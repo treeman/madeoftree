@@ -75,20 +75,13 @@ TODO
     * Game page
         * Link to downloads
         * Screenshots
+        * Remove trailing index.html in links to itself!
     * Downloadables
     * Screenshots
     * Recommended games in footer
     * Config file for game
         * Competition game was made for
         * Code repository
-
-* Remove the use of `<center>`! Deprecated since html 4.x or something...  
-    Replace with `<div class="center">...</div>`
-
-* Replace links in posts to relative links  
-    /blog/ludum_dare_22_timelapse -> /blog/2011/12/19/ludum_dare_22_timelapse  
-    etc...  
-    A *lot* of links. Make script.
 
 * Log script. Retrieve and store logs from s3 storage.
 
