@@ -1,7 +1,7 @@
 layout: project
 title: 7days
 repository: git://github.com/treeman/7days.git
-published: false
+published: true
 description: |
     A fast prototyping framework made in C++ and [SFML][]. I didn't develop it as much as it's a collection of stuff I've found useful when making games.
 

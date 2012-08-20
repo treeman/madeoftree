@@ -318,21 +318,6 @@ module Jekyll
   end
 
 
-  # Create an unordered list of projects
-  class ProjectList < Liquid::Tag
-    def render(context)
-      site = context.registers[:site]
-      result = "<ul>"
-
-      site.projects[0..3].each do |project|
-        result = result + "\n<li><a href=\"#{project['link']}\">#{project['title']}</a></li>"
-      end
-
-      result = result + "\n</ul>"
-    end
-  end
-
-
   # Sub-class Jekyll::StaticFile to allow recovery from an unimportant exception when writing zip files.
   class StaticProjectFile < StaticFile
     def write(dest)
@@ -365,6 +350,4 @@ module Jekyll
   end
 
 end
-
-Liquid::Template.register_tag('project_list', Jekyll::ProjectList)
 

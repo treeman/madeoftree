@@ -9,4 +9,6 @@ url: http://madeoftree.se
 category_dir: '/blog/categories'
 tag_dir: '/blog/tags'
 markdown: rdiscount
+featured_posts: ["Game Design Analysis: World of Goo", "Evolution of RTS games"]
+featured_projects: ["7days", "MARC", "Treebot", "dotfiles"]
 

@@ -3,46 +3,10 @@ layout: default
 ---
 
 <article>
-    <header>
-        <h2>
-            Posted on
-            <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%B %e, %Y" }}</time>
-            {% if page.category %}
-                in <a href="/categories/{{ page.category | uri_escape }}">{{ page.category }}</a>
-            {% endif %}
-        </h2>
-        <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    </header>
+    {% assign post = page %}
+    {% include post_header.html %}
 
     {{ content }}
 
-    {% if page.tags %}
-      {% for tag in page.tags %}
-        {% if forloop.first %}<div class="tags">Tagged as{% endif %}
-            <a href="/tags/{{ tag | uri_escape }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-        {% if forloop.last %}</div>{% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% if has_nav %}
-      <nav>
-        {% if page.previous.url %}
-            &laquo;&nbsp;
-            <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">
-                {{ page.previous.title }}
-            </a>
-            {% if page.next.url %}
-               |
-            {% endif %}
-        {% endif %}
-
-        {% if page.next.url %}
-            <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">
-                {{ page.next.title }}
-            </a>
-            &nbsp;&raquo;
-        {% endif %}
-      </nav>
-    {% endif %}
 </article>
 

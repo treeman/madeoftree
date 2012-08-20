@@ -42,16 +42,45 @@ TODO
 ----
 
 * Design!
-    * Prettier date handling, see - http://recursive-design.com/blog/
-    * Bunch up projects, see - http://recursive-design.com/projects/
+    * Unreadable on mobile phone
+    * Fix html5 markup for unsupportive browsers
+    * Tagged as in posts
+    * Delimiter (horisontal line?) between posts in listings
+    * Code highlighting
+    * Remove code borders, need background
+    * Link styling
+        * Change color when hovering
+    * Size + color for headers in pages
+    * Games
+        * Prettier date for games
+        * Remove tags and categories for games
+    * Projects
+        * Style repository link
+        * Prettier download link
+        * Bunch up projects, see - http://recursive-design.com/projects/
+    * Style unordered/ordered lists better
 
 * Implement urls:
 
         /sitemap + sitemap.xml
         /quotes
 
-* Add in custom game files content
-* Add in custom game screens content
+* Better 404 page
+    * List tags + categories
+    * List games
+    * Split screen in the middle
+
+* Games handling
+    * Main page
+    * Game page
+        * Link to downloads
+        * Screenshots
+    * Downloadables
+    * Screenshots
+    * Recommended games in footer
+    * Config file for game
+        * Competition game was made for
+        * Code repository
 
 * Remove the use of `<center>`! Deprecated since html 4.x or something...  
     Replace with `<div class="center">...</div>`
