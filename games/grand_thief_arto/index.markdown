@@ -4,6 +4,8 @@ title: Grand Thief Arto
 date: 2011-10-19
 category: Games
 tags: [Games, School, 10-Games-10-Languages]
+project:
+    name: School
 ---
 
 Here's me and Li's game for our school course. The game isn't tweaked too much but it's a game with some fairly cool ideas.

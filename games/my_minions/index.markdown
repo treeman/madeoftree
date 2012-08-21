@@ -4,6 +4,10 @@ title: My Minions
 date: 2011-05-02
 category: Games
 tags: [Games, Ludum Dare]
+repository: git://github.com/treeman/My-Minions.git
+project:
+    name: Ludum Dare
+    link: http://www.ludumdare.com/compo/
 ---
 
 So I think I made it! It became a pretty different game from what I set out to create, but I'm glad with how it turned out.

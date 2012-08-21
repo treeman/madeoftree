@@ -4,6 +4,9 @@ title: MenuCity
 date: 2009-10-13
 category: Games
 tags: [Games, 7days]
+project:
+    name: Experimental Gameplay Project
+    link: http://experimentalgameplay.com/blog/
 ---
 
 This game is called MenuCity and it's a numbers game. Well that's the theme anyway. The game pretty much held to what I planned for - except that it deviated from the theme -again- a bit.

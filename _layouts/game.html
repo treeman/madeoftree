@@ -3,8 +3,32 @@ layout: default
 ---
 
 <article>
-  {% assign post = page %}
-  {% include post_header.html %}
+
+  <header>
+    {% if page.repository %}
+      <div class="repository">
+        $ git clone {{ page.repository }}
+      </div>
+    {% endif %}
+
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
+      <span class="month">{{ page.date | date: "%b" | upcase }}</span>
+      <span class="day">{{ page.date | date: "%d" }}</span>
+      <span class="year">{{ page.date | date: "%Y" }}</span>
+    </time>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+
+    {% if page.project %}
+      <div class="project">
+        Made for
+        {% if page.project.link %}
+          <a href="{{ page.project.link }}">{{ page.project.name }}</a>.
+        {% else %}
+          <span class="name">{{ page.project.name }}</span>.
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
 
   <nav class=gamedownloads>
     <ul>
@@ -22,7 +46,9 @@ layout: default
     <ul>
     {% for file in page.screenshots %}
       <li>
-        <img src="{{ file.link }}" title="{{ page.title }}: {{ file.descr }}" width="200"/>
+        <a href="{{ file.link }}" rel="bookmark" title="{{ page.title }}" class="img">
+          <img src="{{ file.link }}" title="{{ page.title }}: {{ file.descr }}" width="260"/>
+        </a>
       </li>
     {% endfor %}
     </ul>

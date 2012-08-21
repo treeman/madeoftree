@@ -4,6 +4,10 @@ title: Beebop The Island Hopper
 date: 2010-04-26
 category: Games
 tags: [Games, Ludum Dare]
+repository: git://github.com/treeman/ludumdare17.git
+project:
+    name: Ludum Dare
+    link: http://www.ludumdare.com/compo/
 ---
 
 It's here! The stuff of dreams, an entry for the epic [Ludum Dare 17][id] has been made! For those who don't know it's a 48 hour game making competition which actually is pretty silly. Even more silly is my two hours of commitment yesterday but late this night at about 03:05 I am now, finally, writing this post! The theme was *islands* and this is what I came up with:

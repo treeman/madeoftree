@@ -4,6 +4,11 @@ title: Sat-E
 date: 2011-12-19
 category: Games
 tags: [Games, 7days]
+showcase: "Lots_Of_Stuff.png"
+repository: git://github.com/treeman/Sat-E.git
+project:
+    name: Ludum Dare
+    link: http://www.ludumdare.com/compo/
 ---
 
 So I entered [Ludum Dare 22](www.ludumdare.com/compo/) this weekend as a preamble for tomorrow's linear algebra exam. The theme this time around was *Alone* and the game I came up with is about a lonely satellite in space, kinda like Wall-E.
@@ -29,3 +34,4 @@ F1 - Developer console
 
 Built using my fast prototyping framework  
 <https://github.com/treeman/7days>
+

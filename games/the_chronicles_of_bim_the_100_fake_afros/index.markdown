@@ -4,6 +4,10 @@ title: "The Chronicles of Bim: The 100 Fake Afros"
 date: 2010-01-16
 category: Games
 tags: [Games, 7days]
+repository: git://github.com/treeman/100-things.git
+project:
+    name: Experimental Gameplay Project
+    link: http://experimentalgameplay.com/blog/
 ---
 
 Aaah feels good having a game ready after the last month's failure! This time it's a small shooter.

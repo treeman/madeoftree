@@ -4,6 +4,9 @@ title: Balls
 date: 2009-08-01
 category: Games
 tags: [Games, 7days]
+project:
+    name: Experimental Gameplay Project
+    link: http://experimentalgameplay.com/blog/
 ---
 
 Here's my first ever experimental game! The theme was *Addictive Gaming*. My first thought was oh god I'll be making another tetris clone but the end result turned out a bit different. I'm not sure it's very addictive but it's actually okay! =D

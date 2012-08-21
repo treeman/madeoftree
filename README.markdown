@@ -56,7 +56,8 @@ TODO
         * Prettier date for games
         * Remove tags and categories for games
         * Remove trailing index.html in links to itself
-        * Better styled list for screenshots in game page
+        * Better download styling
+        * Style code links etc
     * Projects
         * Style repository link
         * Prettier download link
@@ -77,12 +78,11 @@ TODO
     * List games
     * Split screen in the middle
 
-* Games handling
-    * Main page
-    * Recommended games in footer
+* Games
     * Configs in header:
-        * Competition game was made for
         * Code repository
+    * Info to headers:
+        * Code link for humans?
 
 * Log script. Retrieve and store logs from s3 storage.
 

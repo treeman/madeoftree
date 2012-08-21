@@ -6,17 +6,35 @@ module Jekyll
     def initialize(site, base, dir, game)
       super site, base, dir, game['base_file']
 
-      # Assimilate game data for access in template e.g. {{ page.link }} etc
-      game.each do |k, v|
-        self.data[k] = v
+      # Find a showcased screenshot
+      if self.data['showcase']
+        game['screenshots'].each do |s|
+          if s['filename'] == self.data['showcase']
+            game['screen'] = s['link']
+          end
+        end
       end
 
+      # Default to first screen
+      unless game['screen']
+        game['screen'] = game['screenshots'][0]['link']
+      end
+
+      # Collect data from yaml front matter
+      self.data.each do |k, v|
+        game[k] = v
+      end
+
+      # Assimilate game data for access in template e.g. {{ page.link }} etc
+      self.data = game
     end
   end
 
   class Games < CustomPage
-    def initialize(site, base, dir)
+    def initialize(site, base, dir, games)
       super site, base, dir, 'games'
+
+      self.data['games'] = games
     end
   end
 
@@ -24,9 +42,29 @@ module Jekyll
 
     GAMES_FOLDER = 'games'
 
+    @@games = []
+
+    def games
+      @@games
+    end
+
     # Write all games
     def generate_games
-        get_games
+      games = get_games
+
+      # Write game files and collect game info to self.games at the same time
+      games.each do |game|
+        write_page Game.new(self, self.source, game['dir'], game)
+      end
+
+      # Sort games by date tag, which lives inside yaml front matter
+      games = games.sort_by { |g| g['date'] }.reverse!
+
+      # Save game info in site for use in tags etc
+      @@games = games
+
+      # Write game main page
+      write_page Games.new(self, self.source, GAMES_FOLDER, games)
     end
 
    private
@@ -36,8 +74,8 @@ module Jekyll
                 (?<base>.+/download/)
                 (?<filename>
                   (?<platform>[^-_]+)
-                  (?<arch>
-                     [^-]+
+                  (_
+                    (?<arch>[^-]+)
                   )?
                   -
                   (?<name>.+)
@@ -56,8 +94,12 @@ module Jekyll
 
         descr = info['platform']
         descr += ' ' + info['arch'] if info['arch']
-        descr += ' ' + info['name']
         info['descr'] = descr
+
+        full_descr = info['platform']
+        full_descr += ' ' + info['arch'] if info['arch']
+        full_descr += ' ' + info['name']
+        info['full_descr'] = full_descr
 
         info
       end
@@ -67,8 +109,10 @@ module Jekyll
       if m = %r{
                 (?<link>
                   .*/screenshot/
-                  (?<descr>.+)
-                  \.[^.]+
+                  (?<filename>
+                    (?<descr>.+)
+                    \.[^.]+
+                  )
                 )
                 $
                }x.match(file)
@@ -76,6 +120,7 @@ module Jekyll
 
         info['link'] = '/' + m[:link]
         info['descr'] = m[:descr]
+        info['filename'] = m[:filename]
 
         info
       end
@@ -100,7 +145,6 @@ module Jekyll
 
           game = games[m[:name]]
           game['dir'] = GAMES_FOLDER + '/' + m[:name]
-          #puts "dir: " + game['dir']
           game['link'] = '/' + game['dir']
 
           if m[:rest] =~ /^index\.[^.]+$/
@@ -122,10 +166,8 @@ module Jekyll
         end
       end
 
-      # Write game files
-      games.each do |name, game|
-        write_page Game.new(self, self.source, game['dir'], game)
-      end
+      # Return array not hash
+      games.values
     end
 
   end
@@ -135,6 +177,7 @@ module Jekyll
 
     def generate(site)
       site.generate_games
+      puts "done!"
     end
   end
 

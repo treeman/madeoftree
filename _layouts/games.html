@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<nav class=games>
+  <h1>Game Archive</h1>
+
+  {% for game in page.games %}
+  <ul>
+    <li class="split">
+      <hgroup>
+        <h1><a href="{{ game.link }}" rel="bookmark" title="{{ game.title }}">{{ game.title }}</a></h1>
+        <a href="{{ game.link }}" rel="bookmark" title="{{ game.title }}" class=img>
+            <img src="{{ game.screen }}" width="400" />
+        </a>
+        <ul>
+          {% for file in game.downloads %}
+          <li>
+            <a href="{{ file.link }}" rel="bookmark">{{ file.descr }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </hgroup>
+    </li>
+  </ul>
+  {% endfor %}
+
+</nav>
+

@@ -4,6 +4,9 @@ title: Bugger
 date: 2009-09-20
 category: Games
 tags: [Games, 7days]
+project:
+    name: Experimental Gameplay Project
+    link: http://experimentalgameplay.com/blog/
 ---
 
 Ahhh... Finally another game! Theme of this beauty is *Failure* and your mission here is to avoid the bugs. As a programmer the fight with those nasty bugs are a daily occurrence and now I've brought you a chance to kill those nasties too!

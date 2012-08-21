@@ -4,6 +4,9 @@ title: "Where's Teddy?"
 date: 2010-06-06
 category: Games
 tags: [Games, Game Design]
+repository: git://github.com/treeman/A-Game.git
+project:
+    name: a game design course
 ---
 
 So I did this course Game Design and what's a course on Game Design without a game? Well, here it is. Made in about seven days (more likely eight) and I thought it became quite cool.
