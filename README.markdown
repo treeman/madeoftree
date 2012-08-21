@@ -55,6 +55,8 @@ TODO
     * Games
         * Prettier date for games
         * Remove tags and categories for games
+        * Remove trailing index.html in links to itself
+        * Better styled list for screenshots in game page
     * Projects
         * Style repository link
         * Prettier download link
@@ -77,14 +79,8 @@ TODO
 
 * Games handling
     * Main page
-    * Game page
-        * Link to downloads
-        * Screenshots
-        * Remove trailing index.html in links to itself!
-    * Downloadables
-    * Screenshots
     * Recommended games in footer
-    * Config file for game
+    * Configs in header:
         * Competition game was made for
         * Code repository
 
