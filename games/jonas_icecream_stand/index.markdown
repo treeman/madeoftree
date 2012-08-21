@@ -2,8 +2,6 @@
 layout: game
 title: Jonas IceCream Stand
 date: 2009-11-25
-category: Games
-tags: [Games, 7days]
 project:
     name: Experimental Gameplay Project
     link: http://experimentalgameplay.com/blog/

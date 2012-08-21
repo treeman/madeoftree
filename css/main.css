@@ -239,6 +239,7 @@ code .Variable { color: #ad68ac; }
 
 .gamedownloads {
     font-size: 1.3em;
+    clear: both;
 }
 
 .gamedownloads h1 {

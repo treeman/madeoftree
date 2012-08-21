@@ -2,8 +2,6 @@
 layout: game
 title: MenuCity
 date: 2009-10-13
-category: Games
-tags: [Games, 7days]
 project:
     name: Experimental Gameplay Project
     link: http://experimentalgameplay.com/blog/

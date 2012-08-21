@@ -42,6 +42,13 @@ Sitemap
 TODO
 ----
 
+* Write
+    * Introductary home page header
+    * Check about page
+    * Website in readme (here!)
+
+* Clean up categories in posts...
+
 * Design!
     * Unreadable on mobile phone
     * Fix html5 markup for unsupportive browsers
@@ -53,9 +60,6 @@ TODO
         * Change color when hovering
     * Size + color for headers in pages
     * Games
-        * Prettier date for games
-        * Remove tags and categories for games
-        * Remove trailing index.html in links to itself
         * Better download styling
         * Style code links etc
     * Projects
@@ -67,16 +71,25 @@ TODO
     * More color to header
     * Add a small banner-like image?
     * Pictures in footer
+    * Funky looking 404 page
 
 * Implement urls:
 
         /sitemap.xml
         /quotes
 
+* Better home page
+    * Game links
+    * Recommended post links
+    * Projects
+    * Last 2 posts big
+    * 5 posts after that just listed
+
 * Better 404 page
     * List tags + categories
     * List games
-    * Split screen in the middle
+
+* Check correctness of feed links
 
 * Games
     * Configs in header:

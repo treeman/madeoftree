@@ -2,8 +2,6 @@
 layout: game
 title: Bugger
 date: 2009-09-20
-category: Games
-tags: [Games, 7days]
 project:
     name: Experimental Gameplay Project
     link: http://experimentalgameplay.com/blog/

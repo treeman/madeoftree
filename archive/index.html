@@ -8,23 +8,23 @@ title: Welcome to the Archives
 
     {% for post in site.posts %}
 
-        {% unless post.next %}
-            <h2>{{ post.date | date: '%Y' }}</h2>
-            <ul>
-        {% else %}
-            {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-            {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-            {% if year != nyear %}
-                </ul>
-                <h2>{{ post.date | date: '%Y' }}</h2>
-                <ul>
-            {% endif %}
-        {% endunless %}
+      {% unless post.next %}
+        <h2><a href="/blog/{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a></h2>
+        <ul>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          </ul>
+            <h2><a href="/blog/{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a></h2>
+          <ul>
+        {% endif %}
+      {% endunless %}
 
-        <li>
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %e, %Y" }}</time>
-        </li>
+      <li>
+          <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %e, %Y" }}</time>
+      </li>
     {% endfor %}
     </ul>
 </nav>

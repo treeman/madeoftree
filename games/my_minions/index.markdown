@@ -2,8 +2,6 @@
 layout: game
 title: My Minions
 date: 2011-05-02
-category: Games
-tags: [Games, Ludum Dare]
 repository: git://github.com/treeman/My-Minions.git
 project:
     name: Ludum Dare

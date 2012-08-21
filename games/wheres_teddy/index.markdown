@@ -2,8 +2,6 @@
 layout: game
 title: "Where's Teddy?"
 date: 2010-06-06
-category: Games
-tags: [Games, Game Design]
 repository: git://github.com/treeman/A-Game.git
 project:
     name: a game design course

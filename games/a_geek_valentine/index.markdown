@@ -1,9 +1,7 @@
 ---
 layout: game
 title: A Geek Valentine
-category: Games
 date: 2010-02-28
-tags: [Games, 7days]
 repository: git://github.com/treeman/Rejection.git
 project:
     name: Experimental Gameplay Project

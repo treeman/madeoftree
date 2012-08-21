@@ -2,8 +2,6 @@
 layout: game
 title: Grand Thief Arto
 date: 2011-10-19
-category: Games
-tags: [Games, School, 10-Games-10-Languages]
 project:
     name: School
 ---

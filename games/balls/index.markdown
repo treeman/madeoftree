@@ -2,8 +2,6 @@
 layout: game
 title: Balls
 date: 2009-08-01
-category: Games
-tags: [Games, 7days]
 project:
     name: Experimental Gameplay Project
     link: http://experimentalgameplay.com/blog/

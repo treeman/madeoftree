@@ -2,8 +2,6 @@
 layout: game
 title: Beebop The Island Hopper
 date: 2010-04-26
-category: Games
-tags: [Games, Ludum Dare]
 repository: git://github.com/treeman/ludumdare17.git
 project:
     name: Ludum Dare

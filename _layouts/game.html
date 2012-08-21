@@ -5,6 +5,17 @@ layout: default
 <article>
 
   <header>
+
+  <nav class=gamedownloads>
+    <ul>
+    {% for file in page.downloads %}
+      <li>
+        <a href="{{ file.link }}" rel="bookmark">{{ file.descr }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+
     {% if page.repository %}
       <div class="repository">
         $ git clone {{ page.repository }}
@@ -16,7 +27,7 @@ layout: default
       <span class="day">{{ page.date | date: "%d" }}</span>
       <span class="year">{{ page.date | date: "%Y" }}</span>
     </time>
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
 
     {% if page.project %}
       <div class="project">
@@ -29,16 +40,6 @@ layout: default
       </div>
     {% endif %}
   </header>
-
-  <nav class=gamedownloads>
-    <ul>
-    {% for file in page.downloads %}
-      <li>
-        <a href="{{ file.link }}" rel="bookmark">{{ file.descr }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </nav>
 
   {{ content }}
 

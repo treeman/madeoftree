@@ -2,8 +2,6 @@
 layout: game
 title: Sat-E
 date: 2011-12-19
-category: Games
-tags: [Games, 7days]
 showcase: "Lots_Of_Stuff.png"
 repository: git://github.com/treeman/Sat-E.git
 project:
