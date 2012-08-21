@@ -28,6 +28,7 @@ Sitemap
     /wiki/*page
     /games
     /games/:title
+    /sitemap
 
     game ex:
     /games/sat-e/
@@ -59,10 +60,14 @@ TODO
         * Prettier download link
         * Bunch up projects, see - http://recursive-design.com/projects/
     * Style unordered/ordered lists better
+    * Wiki page
+    * More color to header
+    * Add a small banner-like image?
+    * Pictures in footer
 
 * Implement urls:
 
-        /sitemap + sitemap.xml
+        /sitemap.xml
         /quotes
 
 * Better 404 page

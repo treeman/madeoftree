@@ -1,0 +1,15 @@
+---
+layout: page
+title: The All-Seeing Sitemap
+---
+
+<nav>
+  <h1>Sitemap</h1>
+
+  <ul>
+  {% for url in page.urls %}
+    <li><a href="{{ url }}">{{ url }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+

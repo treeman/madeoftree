@@ -15,7 +15,7 @@ module Jekyll
   end
 
   class Site
-    def write_notfound
+    def generate_notfound
       write_page NotFound.new(self, self.source)
     end
   end

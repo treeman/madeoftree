@@ -3,7 +3,7 @@ auto: false
 server: false
 pygments: true
 permalink: /blog/:year/:month/:day/:title
-exclude: ["site", "README.markdown", "version", "LICENSE"]
+exclude: ["site", "README.markdown", "version", "LICENSE", "redirects", "post_editing"]
 title: Madeoftree
 url: http://madeoftree.se
 category_dir: '/blog/categories'

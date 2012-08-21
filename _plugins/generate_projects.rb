@@ -67,6 +67,8 @@ require 'git'
 require 'zip/zip'
 require 'zip/zipfilesystem'
 
+require_relative 'custom_page'
+
 module Jekyll
 
   # The ProjectIndex class creates a single project page for the specified project.

@@ -1,3 +1,5 @@
+require_relative 'custom_page'
+
 module Jekyll
 
     class Category < CustomPage
@@ -36,7 +38,7 @@ module Jekyll
 
     class Site
 
-        def write_categories
+        def generate_categories
             throw "No 'category' layout found." unless self.layouts.key? 'category'
 
             dir = self.config['category_dir'] || 'categories'
@@ -47,7 +49,7 @@ module Jekyll
             end
         end
 
-        def write_tags
+        def generate_tags
             throw "No 'category' layout found." unless self.layouts.key? 'tag'
 
             dir = self.config['tag_dir'] || 'tags'

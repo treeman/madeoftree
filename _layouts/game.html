@@ -3,10 +3,30 @@ layout: default
 ---
 
 <article>
-    {% assign post = page %}
-    {% include post_header.html %}
+  {% assign post = page %}
+  {% include post_header.html %}
 
-    {{ content }}
+  <nav class=gamedownloads>
+    <ul>
+    {% for file in page.downloads %}
+      <li>
+        <a href="{{ file.link }}" rel="bookmark">{{ file.descr }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+
+  {{ content }}
+
+  <nav class=gamescreens>
+    <ul>
+    {% for file in page.screenshots %}
+      <li>
+        <img src="{{ file.link }}" title="{{ page.title }}: {{ file.descr }}" width="200"/>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
 
 </article>
 
