@@ -86,9 +86,6 @@ module Jekyll
 
       self.data = load_config(base_dir, project_config_path)
 
-      # Add in url for linkage in layouts
-      self.data['link'] = "/#{project_dir}"
-
       # Ignore the project unless it has been marked as published.
       unless self.data['published']
         return false
@@ -126,13 +123,17 @@ module Jekyll
 
       self.data['content'] = self.content
 
-      # Save project info
-      #site.projects << self.data
-      site.projects.map! { |d|
-        (d['title'] == self.data['title']) ? self.data : d
-      }
+      # Update project info
+      site.projects.collect! { |d|
+        # Assimilate hashes
+        if d['title'] == self.data['title']
+          self.data.each do |k, v|
+            d[k] = v
+          end
+        end
 
-      puts "Project #{self.data['title']} parsed"
+        d
+      }
 
       @name = "index#{ext}"
       self.process(@name)
@@ -331,12 +332,15 @@ module Jekyll
       projects = self.get_project_files
       projects.each do |project_config_path|
         file = File.join(self.source, project_config_path)
-        yaml = File.read(File.join(file))
+        yaml = File.read(file)
         info = YAML.load(yaml)
 
-        #puts info
+        project_name = project_config_path.sub(/^#{PROJECT_FOLDER}\/([^\.]+)\..*/, '\1')
+        project_dir = File.join(base_dir, project_name)
 
-        #puts info['title']
+        # Add in url for linkage in layouts
+        info['link'] = "/#{project_dir}"
+
         if info['published']
           self.projects << info
         end
