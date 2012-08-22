@@ -227,7 +227,17 @@ elsif ($wiki) {
     exec "vim $file";
 }
 elsif ($edit) {
-    my $file = what_post_file();
+    die "No title given" unless scalar @ARGV;
+
+    my $now = strftime ('%F', gmtime);
+    my $clean_title = get_clean_title ();
+
+    my @files = <_posts/*>;
+    @files = grep(m|_posts/\d{4}-\d{2}-\d{2}-$clean_title\.markdown|, @files);
+
+    die "Could not find post '$clean_title'" unless scalar @files;
+
+    my $file = shift @files;
 
     say "File '$file'" if $debug;
 
