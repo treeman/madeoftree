@@ -342,7 +342,7 @@ module Jekyll
   # Jekyll hook - the generate method is called by jekyll, and generates all the project pages.
   class GenerateProjects < Generator
     safe true
-    priority :low
+    priority :high
 
     def generate(site)
       site.write_project_indexes

@@ -46,6 +46,7 @@ TODO
     * Introductary home page header
     * Check about page
     * Website in readme (here!)
+    * 404 header
 
 * Clean up categories in posts...
 
@@ -72,6 +73,14 @@ TODO
     * Add a small banner-like image?
     * Pictures in footer
     * Funky looking 404 page
+    * Main page split bottom links prettier
+    * Not as visible "Read more..."
+    * Color scheme for site!
+
+* Bugs
+    * Not all projects links in footer show up  
+        For example in MARC page only MARC is visible...
+    * site --edit will use current date! Fail!
 
 * Implement urls:
 
@@ -80,6 +89,7 @@ TODO
 
 * Better home page
     * Game links
+        * Need to generate it after games
     * Recommended post links
     * Projects
     * Last 2 posts big
