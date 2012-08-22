@@ -11,37 +11,37 @@ title: Hello World!
 {% assign listing_limit = 2 %}
 {% include short_posts.html %}
 
-<nav>
-  <h1>More Posts</h2>
-  <ul>
-  {% for post in site.posts limit: 5 offset:2 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-</nav>
+<div class="c2">
+  <nav>
+    <h1>More Posts</h2>
+    <ul>
+    {% for post in site.posts limit: 5 offset:2 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </nav>
 
-<nav>
-  <h1>Featured Posts</h1>
-  {% featured_posts %}
-</nav>
+  <nav>
+    <h1>Featured Posts</h1>
+    {% featured_posts %}
+  </nav>
 
-<h2><a href="/archive">Even more posts</a></h2>
+  {% include recommended.html %}
+</div>
 
-<nav>
-  <h1><a href="/games">Games</a></h1>
-  <ul>
-  {% for game in site.games %}
-    <li><a href="{{ game.link }}">{{ game.title }}</a></li>
-  {% endfor %}
-  </ul>
-</nav>
+<div class="c2">
+  <nav>
+    <h1><a href="/projects">Projects</a></h1>
+    {% project_list %}
+  </nav>
 
-<nav>
-  <h1>Recommended</h1>
-  <ul>
-    <li><a href="/about">About</a></li>
-    <li><a href="/books">Book recommendations</a></li>
-    <li><a href="/projects">Projects</a></li>
-  </ul>
-</nav>
+  <nav>
+    <h1><a href="/games">Games</a></h1>
+    {% games_list %}
+  </nav>
+</div>
+
+<div class="endnotice">
+  <h2><a href="/archive">Even more posts</a></h2>
+</div>
 

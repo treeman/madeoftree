@@ -34,6 +34,20 @@ module Jekyll
     end
   end
 
+  # Create an unordered list of projects
+  class ProjectList < Liquid::Tag
+    def render(context)
+      site = context.registers[:site]
+      result = "<ul>"
+
+      site.projects.each do |project|
+        result = result + "\n<li><a href=\"#{project['link']}\">#{project['title']}</a></li>"
+      end
+
+      result = result + "\n</ul>"
+    end
+  end
+
   # Create an unordered list of featured games
   class FeaturedGames < Liquid::Tag
     def render(context)
@@ -49,14 +63,14 @@ module Jekyll
     end
   end
 
-  # Create an unordered list of projects
-  class ProjectList < Liquid::Tag
+  # Create an unordered list of games
+  class GamesList < Liquid::Tag
     def render(context)
       site = context.registers[:site]
       result = "<ul>"
 
-      site.projects.each do |project|
-        result = result + "\n<li><a href=\"#{project['link']}\">#{project['title']}</a></li>"
+      site.games.select.each do |game|
+        result = result + "\n<li><a href=\"#{game['link']}\">#{game['title']}</a></li>"
       end
 
       result = result + "\n</ul>"
@@ -69,4 +83,5 @@ Liquid::Template.register_tag('featured_posts', Jekyll::FeaturedPosts)
 Liquid::Template.register_tag('featured_projects', Jekyll::FeaturedProjects)
 Liquid::Template.register_tag('featured_games', Jekyll::FeaturedGames)
 Liquid::Template.register_tag('project_list', Jekyll::ProjectList)
+Liquid::Template.register_tag('games_list', Jekyll::GamesList)
 

@@ -104,6 +104,7 @@ sub help {
     say "       List links currently inside _site.";
     say "   --link test";
     say "       Check a 200 response from all internal links.";
+    say "       You -must- have a web server running at 0.0.0.0:4000/ for it to work!";
     say "   --edit [post title]";
     say "       Edit a post.";
     say "";
@@ -285,11 +286,6 @@ elsif ($link) {
     my ($ext, $int, $unk) = fetch_site_links();
 
     if ($link eq 'test') {
-        system ("jekyll --server --auto --url $url $dir/ $dir/_site &");
-
-        # Wait for server to correct itself
-        sleep 5;
-
         my %fails;
         my @ugly;
 
@@ -326,9 +322,6 @@ elsif ($link) {
         for my $url (@ugly) {
             say pretty ($url);
         }
-
-        # Forcefully remove jekyll
-        `pkill jekyll`;
     }
     else {
 

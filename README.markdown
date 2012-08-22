@@ -76,34 +76,19 @@ TODO
     * Main page split bottom links prettier
     * Not as visible "Read more..."
     * Color scheme for site!
-
-* Bugs
-    * Not all projects links in footer show up  
-        For example in MARC page only MARC is visible...
-    * site --edit will use current date! Fail!
+    * Highlight first post on home page
 
 * Implement urls:
 
         /sitemap.xml
         /quotes
 
-* Better home page
-    * Game links
-        * Need to generate it after games
-    * Recommended post links
-    * Projects
-    * Last 2 posts big
-    * 5 posts after that just listed
-
 * Better 404 page
-    * List tags + categories
-    * List games
+    * List tags + categories?
 
 * Check correctness of feed links
 
 * Games
-    * Configs in header:
-        * Code repository
     * Info to headers:
         * Code link for humans?
 

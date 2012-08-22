@@ -177,7 +177,6 @@ module Jekyll
 
     def generate(site)
       site.generate_games
-      puts "done!"
     end
   end
 

@@ -2,7 +2,7 @@
 # http://recursive-design.com/projects/jekyll-plugins/
 #
 # Version: 0.1.8 (201108151628)
-# Modified stuff since then!
+# Heavily modified
 #
 # Copyright (c) 2010 Dave Perrett, http://recursive-design.com/
 # Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
@@ -127,12 +127,7 @@ module Jekyll
       self.data['content'] = self.content
 
       # Save project info
-      #site.projects << self.data
-      site.projects.map! { |d|
-        (d['title'] == self.data['title']) ? self.data : d
-      }
-
-      puts "Project #{self.data['title']} parsed"
+      site.projects << self.data
 
       @name = "index#{ext}"
       self.process(@name)
@@ -276,7 +271,7 @@ module Jekyll
     # Loops through the list of project pages and processes each one.
     def write_project_indexes
       # Prevent overflow when chaning files in server
-      #@@projects = []
+      @@projects = []
 
       base_dir = self.config['project_dir'] || 'projects'
       projects = self.get_project_files
@@ -322,27 +317,6 @@ module Jekyll
       projects
     end
 
-    # Gather up data from .yml files in project dir, this is a preview before rendering every page
-    def collect_project_data
-      # Prevent overflow when changing files in server
-      @@projects = []
-
-      base_dir = self.config['project_dir'] || 'projects'
-      projects = self.get_project_files
-      projects.each do |project_config_path|
-        file = File.join(self.source, project_config_path)
-        yaml = File.read(File.join(file))
-        info = YAML.load(yaml)
-
-        #puts info
-
-        #puts info['title']
-        if info['published']
-          self.projects << info
-        end
-      end
-    end
-
   end
 
 
@@ -368,7 +342,7 @@ module Jekyll
   # Jekyll hook - the generate method is called by jekyll, and generates all the project pages.
   class GenerateProjects < Generator
     safe true
-    priority :low
+    priority :high
 
     def generate(site)
       site.write_project_indexes

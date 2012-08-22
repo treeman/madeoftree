@@ -1,25 +1,36 @@
 ---
-layout: default
+layout: page
 ---
 
-<nav>
-  <h1><a href="/projects">Projects</a></h1>
-  {% project_list %}
-</nav>
+<div class="c2">
+  <nav>
+    <h1>Latest Posts</h1>
+    <ul>
+    {% for post in site.posts limit: 5 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </nav>
 
-<nav>
-  <h1>Featured Posts</h1>
-  {% featured_posts %}
-</nav>
+  <nav>
+    <h1>Featured Posts</h1>
+    {% featured_posts %}
+  </nav>
 
-<nav>
-  <h1>Latest Posts</h1>
-  <ul>
-  {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-</nav>
+  <a href="/archive">Find more posts in the archive</a>
 
-<a href="/archive">Find more posts in the archive</a>
+  {% include recommended.html %}
+</div>
+
+<div class="c2">
+  <nav>
+    <h1><a href="/projects">Projects</a></h1>
+    {% project_list %}
+  </nav>
+
+  <nav>
+    <h1><a href="/games">Games</a></h1>
+    {% games_list %}
+  </nav>
+</div>
 

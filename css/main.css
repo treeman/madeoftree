@@ -51,6 +51,16 @@ h6 {
     font-size:0.7em;
 }
 
+.c2 {
+    width: 50%;
+    float: left;
+}
+
+.endnotice {
+    text-align: center;
+    clear: both;
+}
+
 .center {
     text-align: center;
 }

@@ -1,7 +1,7 @@
 layout: project
 title: Treebot
 repository: git://github.com/treeman/Treebot.git
-published: false
+published: true
 description: |
     An old irc bot with funny quotes and various information scraping like a new manga and tv-series tracker. A bit more to it than the [simplebot][].
 

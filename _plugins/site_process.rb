@@ -3,6 +3,10 @@ module Jekyll
     def process
       self.reset
       self.read
+
+      # Hack for us to be able to render project list in footer...
+      self.collect_project_data
+
       self.generate
       self.render
 
@@ -17,6 +21,8 @@ module Jekyll
 
       self.cleanup
       self.write
+
+      puts "Build complete"
     end
   end
 end
