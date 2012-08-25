@@ -152,7 +152,7 @@ sub fetch_site_links {
     my %unknown;
 
     for my $path ( @all_file_names ) {
-        next unless $path =~ /\.html$/;
+        next unless $path =~ /\.html$|\.xml$/;
 
         #say $path;
         open my $fh, '<', $path;
@@ -162,7 +162,7 @@ sub fetch_site_links {
         my @matches = $s =~ m|<a href="([^"]+)">|g;
 
         for my $m (@matches) {
-            if ($m =~ m<^https?://|^www\.>) {
+            if ($m =~ m<^https?://>) {
                 $external{$m} = 1;
             }
             elsif ($m =~ m|^/|) {
@@ -258,7 +258,7 @@ elsif ($new) {
     say $fh "---";
     say $fh "layout: post";
     say $fh "title: " . join (' ', @ARGV);
-    say $fh "date: " . strftime ('%F %T', gmtime);
+    #say $fh "date: " . strftime ('%F %T', gmtime);
     say $fh "category: ";
     say $fh "tags: ";
     say $fh "---";

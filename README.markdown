@@ -88,6 +88,8 @@ TODO
 
 * Check correctness of feed links
 
+* Make `site --link test` check correct links inside `_site` instead of using a server.
+
 * Games
     * Info to headers:
         * Code link for humans?
