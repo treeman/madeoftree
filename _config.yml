@@ -12,4 +12,5 @@ markdown: rdiscount
 featured_posts: ["Game Design Analysis: World of Goo", "Evolution of RTS games"]
 featured_projects: ["7days", "MARC", "Treebot", "dotfiles"]
 featured_games: ["Sat-E", "Grand Thief Arto", "My Minions", "Where's Teddy?", "MenuCity"]
+project_cache: ".project_cache"
 

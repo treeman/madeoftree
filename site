@@ -6,10 +6,11 @@ use Getopt::Long;
 use Data::Dumper;
 use File::Basename;
 use POSIX qw/strftime/;
-use File::Path qw(make_path);
+use File::Path qw(make_path rmtree);
 use File::Find;
 use threads;
 use Test::More;
+use YAML::XS;
 
 # Set website url
 my $url = "www.madeoftree.se";
@@ -27,6 +28,7 @@ my $update;
 my $build;
 my $sync;
 my $host;
+my $reclone_projects;
 
 my $new;
 my $edit;
@@ -43,6 +45,7 @@ GetOptions(
     'build' => \$build,
     'sync' => \$sync,
     'host' => \$host,
+    'reclone' => \$reclone_projects,
 
     'new' => \$new,
     'edit' => \$edit,
@@ -94,6 +97,8 @@ sub help {
     say "       Sync site from beneath _site.";
     say "   --host";
     say "       Host with jekyll server.";
+    say "   --reclone";
+    say "       Force a new clone for all projects.";
     say "   --wikis";
     say "       List all wiki pages.";
     say "   --wiki [page]";
@@ -175,6 +180,21 @@ sub fetch_site_links {
     }
 
     return \%external, \%internal, \%unknown;
+}
+
+if ($reclone_projects) {
+    open my $fh, '<', "$dir/_config.yml";
+
+    my $s = do { local $/ = <$fh>; };
+    my $config = Load $s;
+
+    die "No option 'project_cache' in '_config.yml'!" unless exists $config->{project_cache};
+
+    my $cache_dir = "$dir/$config->{project_cache}";
+
+    say "Cleaning project cache...";
+    rmtree([ "$cache_dir" ]);
+    mkdir "$cache_dir"; # Hacky way to remove everything in directory :<
 }
 
 if ($help) {

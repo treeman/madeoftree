@@ -53,6 +53,8 @@
 #
 # Available _config.yml settings :
 # - project_dir: The subfolder to compile projects to (default is 'projects').
+# - project_cache: The subfolder we'll keep cloned projects in. Need to manually remove
+#                  when you want to clone again. (default to '.project_cache')
 #
 # Available YAML settings :
 # - repository: Git repository of your project (required).
@@ -66,6 +68,7 @@ require 'find'
 require 'git'
 require 'zip/zip'
 require 'zip/zipfilesystem'
+require 'pathname'
 
 require_relative 'custom_page'
 
@@ -158,24 +161,26 @@ module Jekyll
     #
     # Returns String path to the cloned repository.
     def clone_repo(zip_name)
-      # Make the base clone directory if necessary.
-      clone_dir = File.join(Dir.tmpdir(), 'checkout')
-      puts "clone_dir: " + clone_dir
+      clone_dir = File.join(@site.source, @site.config['project_cache'] || ".project_cache" )
 
+      # Make the base clone directory if necessary.
       unless File.directory?(clone_dir)
+        puts "No dir '#{clone_dir}'"
         p = Pathname.new(clone_dir)
         p.mkdir
+        unless File.directory?(clone_dir)
+          puts "STILL no dir?!?"
+        end
       end
 
-      # Remove any old repo at this location.
       repo_dir = File.join(clone_dir, zip_name)
-      if File.directory?(repo_dir)
-        FileUtils.remove_dir(repo_dir)
+
+      # Clone the repository if it does not exist in cache.
+      unless File.directory?(repo_dir)
+        puts "Cloning #{self.data['repository']} to #{repo_dir}"
+        Git.clone(self.data['repository'], zip_name, :path => clone_dir)
       end
 
-      # Clone the repository.
-      puts "Cloning #{self.data['repository']} to #{repo_dir}"
-      Git.clone(self.data['repository'], zip_name, :path => clone_dir)
       repo_dir
     end
 
