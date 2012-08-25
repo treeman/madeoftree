@@ -103,6 +103,8 @@ TODO
 * 301 redirects... How to handle?  
     Don't care?! :(
 
+* Place project zips in project cache as well.
+
 
 References
 ----------
