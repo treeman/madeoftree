@@ -36,7 +36,7 @@
 # in your _projects folder, create an index page from the README (using the specified layout),
 # and create a downloadable .zip file of the project. The goal is to automate the construction of
 # online project pages, keep them in sync with README documentation, and provide an up-to-date zip
-# archive for download.
+# archive for download. A cache of git repositories will be held to shorten build time considerably.
 #
 # Required files :
 # Your project's git repository should contain:
@@ -208,10 +208,10 @@ module Jekyll
     #
     # Returns String path to the zip file.
     def create_zip(repo_dir, zip_name, project_dir, version)
-      # Create the target folder if it doesn't exist.
-      target_folder = File.join(@site.config['destination'], project_dir)
-      unless File.directory?(target_folder)
-        FileUtils.mkdir_p(target_folder)
+      cache_dir = File.join(@site.source, @site.config['project_cache'] || ".project_cache" )
+
+      unless File.directory?(cache_dir)
+        FileUtils.mkdir_p(cache_dir)
       end
 
       # Decide the name of the bundle - use a timestamp if no version is available.
@@ -219,31 +219,42 @@ module Jekyll
         version = Time.now.strftime('%Y%m%d%H%M')
       end
       zip_filename    = "#{zip_name}.#{version}.zip"
-      bundle_filename = File.join(target_folder, zip_filename)
-      puts "Creating #{bundle_filename}"
 
-      # Remove the bundle if it already exists.
-      if File.file?(bundle_filename)
-        File.delete(bundle_filename)
-      end
+      bundle_filename = File.join(cache_dir, zip_filename)
 
-      Zip::ZipFile.open(bundle_filename, Zip::ZipFile::CREATE) do |zipfile|
-        Find.find(repo_dir) do |path|
-          # Remove .git files.
-          Find.prune if File.basename(path) == '.git'
-          # Trim the temp dir stuff off, leaving just the repo folder.
-          parent = File.expand_path(File.dirname(repo_dir)) + '/'
-          dest = path.sub parent, ''
-          # Add the file to the bundle.
-          zipfile.add(dest, path) if dest
+      # Generate zip file if it doesn't exist
+      unless File.file?(bundle_filename)
+        puts "Creating #{bundle_filename}"
+
+        Zip::ZipFile.open(bundle_filename, Zip::ZipFile::CREATE) do |zipfile|
+          Find.find(repo_dir) do |path|
+            # Remove .git files.
+            Find.prune if File.basename(path) == '.git'
+            # Trim the temp dir stuff off, leaving just the repo folder.
+            parent = File.expand_path(File.dirname(repo_dir)) + '/'
+            dest = path.sub parent, ''
+            # Add the file to the bundle.
+            zipfile.add(dest, path) if dest
+          end
         end
 
-        # Add a static file entry for the zip file, otherwise Site::cleanup will remove it.
-        @site.static_files << Jekyll::StaticProjectFile.new(@site, @site.dest, @dir, zip_filename)
+        # Set permissions.
+        File.chmod(0644, bundle_filename)
       end
 
-      # Set permissions.
-      File.chmod(0644, bundle_filename)
+      # Copy zip to target
+      target_folder = File.join(@site.config['destination'], project_dir)
+
+      unless File.directory?(target_folder)
+        FileUtils.mkdir_p(target_folder)
+      end
+
+      target_filename = File.join(target_folder, zip_filename)
+
+      FileUtils.cp bundle_filename, target_filename
+
+      # Add a static file entry for the zip file, otherwise Site::cleanup will remove it.
+      @site.static_files << Jekyll::StaticProjectFile.new(@site, @site.dest, @dir, zip_filename)
 
       File.basename(bundle_filename)
     end
@@ -281,11 +292,9 @@ module Jekyll
 
     # Loops through the list of project pages and processes each one.
     def write_project_indexes
-      # Prevent overflow when chaning files in server
-      #@@projects = []
-
       base_dir = self.config['project_dir'] || 'projects'
       projects = self.get_project_files
+
       projects.each do |project_config_path|
         project_name = project_config_path.sub(/^#{PROJECT_FOLDER}\/([^\.]+)\..*/, '\1')
         self.write_project_index(File.join(base_dir, project_name), project_config_path, project_name)
