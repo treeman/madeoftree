@@ -48,9 +48,8 @@ TODO
     * Website in readme (here!)
     * 404 header
 
-* Clean up categories in posts...
-
 * Design!
+    * Clean up categories in posts...
     * Unreadable on mobile phone
     * Fix html5 markup for unsupportive browsers
     * Tagged as in posts
@@ -77,6 +76,7 @@ TODO
     * Not as visible "Read more..."
     * Color scheme for site!
     * Highlight first post on home page
+    * Github Code link for humans
 
 * Implement urls:
 
@@ -90,10 +90,6 @@ TODO
 
 * Make `site --link test` check correct links inside `_site` instead of using a server.
 
-* Games
-    * Info to headers:
-        * Code link for humans?
-
 * Log script. Retrieve and store logs from s3 storage.
 
 * Reroute domain names  
@@ -102,8 +98,6 @@ TODO
 
 * 301 redirects... How to handle?  
     Don't care?! :(
-
-* Place project zips in project cache as well.
 
 
 References
