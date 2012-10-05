@@ -1,0 +1,83 @@
+---
+layout: post
+title: markdown
+category: markdown
+tags: [markdown, test]
+---
+
+It's this again... Markdown testing!!
+
+# Header1
+
+The **bold** will do:
+
+* **stuff** -- *maffia?*
+* **yo** -- *razzaa?*
+* **it** -- *robot?*
+* **damn** -- *uni?*
+* **blast** -- *school?*
+
+## Header2
+
+* Item1
+    * Item1
+    * Item2
+        * Item1
+* Item2
+* Item3
+
+Eduroam!
+========
+
+    name = TTLS for Wireless
+    author = Alexander Clouter
+    version = 1
+    require anon_identity *Anonymous_Username identity *Identity password *Password
+    optional ca_cert *Path_to_CA_Cert
+    -----
+    ctrl_interface=/var/run/wpa_supplicant
+    network={
+        ssid="$_ESSID"
+        scan_ssid=$_SCAN
+
+        key_mgmt=WPA-EAP
+        eap=TTLS
+
+        ca_cert="$_CA_CERT"
+
+        phase2="auth=MSCHAPv2 auth=PAP"
+
+        anonymous_identity="$_ANON_IDENTITY"
+        identity="$_IDENTITY"
+        password="$_PASSWORD"
+    }
+
+Special code!
+-------------
+
+{% highlight c %}
+#include <stdio.h>
+
+int main()
+{
+  printf ("Hello World!\n");
+}
+{% endhighlight %}
+
+So we have some `C code` with some fancy `variables` w00p w00p.
+
+Quotes
+------
+
+> So hey I ummm...
+  Think you're awesome!
+
+That's it! :)
+
+Nested quotes:
+
+> Einstein once said...
+> > "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+>
+> Or maybe it was someone else? xD
+

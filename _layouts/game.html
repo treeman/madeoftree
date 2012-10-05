@@ -4,8 +4,6 @@ layout: default
 
 <article>
 
-  <header>
-
   <nav class=gamedownloads>
     <ul>
     {% for file in page.downloads %}
@@ -16,11 +14,7 @@ layout: default
     </ul>
   </nav>
 
-    {% if page.repository %}
-      <div class="repository">
-        $ git clone {{ page.repository }}
-      </div>
-    {% endif %}
+  <header>
 
     <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
       <span class="month">{{ page.date | date: "%b" | upcase }}</span>
@@ -38,6 +32,12 @@ layout: default
           <span class="name">{{ page.project.name }}</span>.
         {% endif %}
       </div>
+    {% endif %}
+
+    {% if page.repository %}
+      <h3 class="repository">
+        $ git clone {{ page.repository }}
+      </h3>
     {% endif %}
   </header>
 
