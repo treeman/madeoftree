@@ -5,9 +5,16 @@ layout: default
 <article>
   <header>
     <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
-    <h2><a href="{{ page.download_link }}">Download</a></h3>
+    <ul>
+      <li><h2><a href="{{ page.download_link }}">Download</a></h3></li>
+      {% if project.browse %}
+      <li><h2 class="browse"><a href="{{ page.browse }}">Browse Code</a></h2></li>
+      {% endif %}
+    </ul>
     <h3 class="repository">$ git clone {{ page.repository }}</h2>
   </header>
+
+  <p>a{{ project.tst }}a</p>
 
   {{ content }}
 

@@ -42,6 +42,9 @@ Sitemap
 TODO
 ----
 
+* Projects ordered after latest change/update
+* Github link, not only as git clone
+
 * Write
     * Introductary home page header
     * Check about page

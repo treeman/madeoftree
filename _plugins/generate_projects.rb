@@ -118,6 +118,13 @@ module Jekyll
         ext = '.markdown'
       end
 
+      # Add browse code link for known types
+      if %r{^git://github.com}.match(self.data['repository'])
+        self.data['browse'] = self.data['repository'].sub(%r{git://(.*)\.git$}, 'http://\1')
+      end
+
+      self.data['tst'] = "BOOYAH"
+
       # Try to get the readme data for this path.
       self.content = File.read(readme)
 
@@ -308,10 +315,12 @@ module Jekyll
     #  +project_name+        is the name of the project to process.
     def write_project_index(project_dir, project_config_path, project_name)
       index = ProjectIndex.new(self, self.source, project_dir, project_config_path, project_name)
+
       # Check that the project has been published.
       if index.data['published']
         index.render(self.layouts, site_payload)
         index.write(self.dest)
+
         # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
         self.static_files << Jekyll::StaticProjectFile.new(self, self.dest, project_dir, 'index.html')
       end
@@ -354,6 +363,18 @@ module Jekyll
 
         # Add in url for linkage in layouts
         info['link'] = "/#{project_dir}"
+
+        #puts info['repository']
+        #info['test'] = "KAPOW"
+
+        # Add browse code link for known types
+        if %r{^git://github.com}.match(info['repository'])
+          info['browse'] = info['repository'].sub(%r{git://(.*)\.git$}, 'http://\1')
+        end
+
+        puts "Loading " + info['browse']
+
+        # puts info.inspect
 
         if info['published']
           self.projects << info
