@@ -94,6 +94,8 @@ module Jekyll
         return false
       end
 
+      puts "Generating " + project_name
+
       # Clone the repo locally and get the path.
       zip_name = project_name
       if self.data['zip_folder_name']
@@ -139,6 +141,9 @@ module Jekyll
         if d['title'] == self.data['title']
           self.data.each do |k, v|
             d[k] = v
+          end
+          d.each do |k, v|
+            self.data[k] = v
           end
         end
 
@@ -351,6 +356,8 @@ module Jekyll
       # Prevent overflow when changing files in server
       @@projects = []
 
+      puts "Collecting project data..."
+
       base_dir = self.config['project_dir'] || 'projects'
       projects = self.get_project_files
       projects.each do |project_config_path|
@@ -372,7 +379,7 @@ module Jekyll
           info['browse'] = info['repository'].sub(%r{git://(.*)\.git$}, 'http://\1')
         end
 
-        puts "Loading " + info['browse']
+        #puts "Loading " + info['browse']
 
         # puts info.inspect
 
