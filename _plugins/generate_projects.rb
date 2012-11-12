@@ -94,8 +94,6 @@ module Jekyll
         return false
       end
 
-      puts "Generating " + project_name
-
       # Clone the repo locally and get the path.
       zip_name = project_name
       if self.data['zip_folder_name']
@@ -109,7 +107,7 @@ module Jekyll
       self.data['version'] = version if version
 
       # Create the .zip file.
-      self.data['download_link'] = create_zip(repo_dir, zip_name, project_dir, version)
+      #self.data['download_link'] = create_zip(repo_dir, zip_name, project_dir, version)
 
       # Get the path to the README
       readme = get_readme_path(repo_dir)
@@ -119,13 +117,6 @@ module Jekyll
       unless ['.textile', '.markdown', '.html'].include?(ext)
         ext = '.markdown'
       end
-
-      # Add browse code link for known types
-      if %r{^git://github.com}.match(self.data['repository'])
-        self.data['browse'] = self.data['repository'].sub(%r{git://(.*)\.git$}, 'http://\1')
-      end
-
-      self.data['tst'] = "BOOYAH"
 
       # Try to get the readme data for this path.
       self.content = File.read(readme)
@@ -356,8 +347,6 @@ module Jekyll
       # Prevent overflow when changing files in server
       @@projects = []
 
-      puts "Collecting project data..."
-
       base_dir = self.config['project_dir'] || 'projects'
       projects = self.get_project_files
       projects.each do |project_config_path|
@@ -371,17 +360,10 @@ module Jekyll
         # Add in url for linkage in layouts
         info['link'] = "/#{project_dir}"
 
-        #puts info['repository']
-        #info['test'] = "KAPOW"
-
         # Add browse code link for known types
         if %r{^git://github.com}.match(info['repository'])
           info['browse'] = info['repository'].sub(%r{git://(.*)\.git$}, 'http://\1')
         end
-
-        #puts "Loading " + info['browse']
-
-        # puts info.inspect
 
         if info['published']
           self.projects << info

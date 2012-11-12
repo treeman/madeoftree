@@ -12,21 +12,24 @@ title: Hello World!
 {% include short_posts.html %}
 
 <div class="c2">
-  <nav>
-    <h1>More Posts</h2>
-    <ul>
-    {% for post in site.posts limit: 5 offset:2 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </nav>
+  {% include recommended.html %}
 
   <nav>
     <h1>Featured Posts</h1>
     {% featured_posts %}
   </nav>
 
-  {% include recommended.html %}
+  <nav>
+    <h1>More Posts</h2>
+    <ul>
+    {% for post in site.posts limit: 10 offset:2 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </nav>
+
+  <h2><a href="/archive">Even more posts</a></h2>
+
 </div>
 
 <div class="c2">
@@ -39,9 +42,5 @@ title: Hello World!
     <h1><a href="/games">Games</a></h1>
     {% games_list %}
   </nav>
-</div>
-
-<div class="endnotice">
-  <h2><a href="/archive">Even more posts</a></h2>
 </div>
 

@@ -10,7 +10,6 @@ title: Projects
       {% if project.browse %}
         <h2 class="browse"><a href="{{ project.browse }}">Browse Code</a></h2>
       {% endif %}
-      <h3 class="repository">$ git clone {{ project.repository }}</h2>
     </header>
 
     {{ project.description || markdownify }}

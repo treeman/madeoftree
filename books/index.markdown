@@ -6,7 +6,7 @@ title: "Book Recommendations"
 Book Recommendations
 ====================
 
-Updated January 1, 2012
+Updated November 11, 2012
 ------
 
 This is an unordered list of books I like so much I would like to promote them a bit. There are programming books but also fiction and manga.
@@ -47,6 +47,12 @@ I'm actually lumping these together but they are individually excellent books fo
 [scottmeyers]: http://aristeia.com/books.html "Scott Meyers books Effective C++, More Effective C++"
 
 [stq]: http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read "What is the single most influential book every programmer should read?"
+
+[The C Programming Language][K&R]
+------------
+The infamous K&R book. It has a few years on it's back but it's stood the test of time and is one of the most succint books out there. The book is short and to the point, but it teaches a lot. And the code examples are nice!
+
+[K&R]: http://cm.bell-labs.com/cm/cs/cbook/
 
 Misc
 ====
