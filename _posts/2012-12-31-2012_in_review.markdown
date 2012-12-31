@@ -76,7 +76,7 @@ Plans for 2013
 11. Fix the Failures of 2012.
 
 [pintos]: http://www.stanford.edu/class/cs140/projects/pintos/pintos.html
-[corewar88]: http://corewar.co.uk/icws88.txt
+[corewars88]: http://corewar.co.uk/icws88.txt
 [MARC]: /projects/MARC
 [website]: /projects/madeoftree
 [Jekyll]: https://github.com/mojombo/jekyll
