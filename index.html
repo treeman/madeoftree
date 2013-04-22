@@ -8,7 +8,7 @@ title: Hello World!
 <p>I'm Jonas, a programmer of sorts and this is my site where I place my projects, games and I occassionally write about stuff.</p>
 
 {% assign posts = site.posts %}
-{% assign listing_limit = 2 %}
+{% assign listing_limit = 3 %}
 {% include short_posts.html %}
 
 <div class="c2">
@@ -22,7 +22,7 @@ title: Hello World!
   <nav>
     <h1>More Posts</h2>
     <ul>
-    {% for post in site.posts limit: 10 offset:2 %}
+    {% for post in site.posts limit: 13 offset:3 %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>

@@ -9,8 +9,6 @@ tags: [Goals, Life]
 
 I have a lot of things I want to do. Right now I want to go to the kids training tomorrow and also to our training time. I haven't trained a lot lately so it feels good to do something again and training the kids is very rewarding. On Monday I have the next graph theory lecture and I want to do all our lesson assignments until then. As I've beaten [FTL](/blog/2013/02/12/faster_than_light/) on easy I really want to do it on normal as well. And I'm looking forward going to the restaurant with Veronica and a bunch of other stuff.
 
-{% endexcerpt %}
-
 But sometimes it's good to take a step back and take a look into the future a bit. What do I want to accomplish? What things do I want to do? What are my long term goals? This is an attempt to list some of them.
 
 Black belt in Taekwon-do
@@ -32,4 +30,6 @@ I want to have kids
 -------------------
 
 I love kids and sometime I want to have them too. More than one preferably.
+
+{% endexcerpt %}
 

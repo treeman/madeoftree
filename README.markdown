@@ -117,3 +117,12 @@ Some plugin stuff modified from [here][black] and [here][jp].
 [black]: http://github.com/BlackBulletIV/blackbulletiv.github.com
 [jp]: http://recursive-design.com/projects/jekyll-plugins/
 
+
+Dependencies
+------------
+
+Jekyll
+rdiscount
+git
+zip
+pygments
